@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/rosaP"
     android:fillViewport="true">
 
     <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/lavanda"
         android:orientation="vertical"
         android:paddingTop="20dp"
         tools:context=".MainActivity">
@@ -19,7 +20,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="208dp"
-            app:srcCompat="@drawable/logo" />
+            app:srcCompat="@drawable/alerta2" />
 
         <View
             android:id="@+id/view4"
@@ -322,8 +323,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-medium"
-            android:textSize="20sp"
-            android:text="@string/Terms_conditions" />
+            android:text="@string/Terms_conditions"
+            android:textSize="20sp" />
 
         <View
             android:id="@+id/view21"
