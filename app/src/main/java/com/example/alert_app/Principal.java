@@ -1,5 +1,6 @@
 package com.example.alert_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -36,6 +37,8 @@ public class Principal extends AppCompatActivity {
                             Toast.makeText(Principal.this, "Información seleccionada", Toast.LENGTH_SHORT).show();
                         } else if (id == R.id.menu_configuracion) {
                             Toast.makeText(Principal.this, "Configuración seleccionada", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(Principal.this, configurationActivity.class);
+                            startActivity(intent);
                         } else if (id == R.id.menu_alertas_emitidas) {
                             Toast.makeText(Principal.this, "Alertas Emitidas seleccionadas", Toast.LENGTH_SHORT).show();
                         } else if (id == R.id.menu_tomar_foto) {
