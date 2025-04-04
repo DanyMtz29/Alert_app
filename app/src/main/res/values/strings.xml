@@ -1,49 +1,56 @@
 <resources>
     <!--MainActivity-->
-        <string name="app_name">Alert_app</string>
-        <!--Text-Strings-->
-        <string name="text_name">Nombre completo</string>
-        <string name="text_address">Dirección</string>
-        <string name="text_phone">Número de telefono celular</string>
-        <string name="text_user_information">Información del usuario</string>
-        <string name="contact_information">Información de contactos</string>
-        <string name="text_relation">Relacion con la persona</string>
-        <string name="text_contact_1">Contacto de emergencia #1</string>
-        <string name="text_contact_2">Contacto de emergencia #2</string>
+    <string name="app_name">Alert_app</string>
+    <!--Text-Strings-->
+    <string name="text_name">Nombre completo</string>
+    <string name="text_address">Dirección</string>
+    <string name="text_phone">Número de telefono celular</string>
+    <string name="text_user_information">Información del usuario</string>
+    <string name="contact_information">Información de contactos</string>
+    <string name="text_relation">Relacion con la persona</string>
+    <string name="text_contact_1">Contacto de emergencia #1</string>
+    <string name="text_contact_2">Contacto de emergencia #2</string>
 
-        <!--Text-Hints-->
-        <string name="hint_name">Introduce tu nombre</string>
-        <string name="hint_address">Introduce tu dirección</string>
-        <string name="hint_phone">Introduce tu número</string>
+    <!--Text-Hints-->
+    <string name="hint_name">Introduce tu nombre</string>
+    <string name="hint_address">Introduce tu dirección</string>
+    <string name="hint_phone">Introduce tu número</string>
 
-        <string name="hint_name_contact">Nombre de la persona</string>
-        <string name="hint_phone_contact">Número de la persona</string>
-        <string name="hint_relation_contact">Introduce la relacion con la persona</string>
+    <string name="hint_name_contact">Nombre de la persona</string>
+    <string name="hint_phone_contact">Número de la persona</string>
+    <string name="hint_relation_contact">Introduce la relacion con la persona</string>
 
-        <!--Text-Checkbox-->
-        <string name="Terms_conditions">Acepto los terminos y condiciones</string>
-        <!--Text-Buttons-->
-        <string name="register_button">Registrar</string>
+    <!--Text-Checkbox-->
+    <string name="Terms_conditions">Acepto los terminos y condiciones</string>
+    <!--Text-Buttons-->
+    <string name="register_button">Registrar</string>
 
     <!--ConfigurationActivity-->
-        <!--Text-Strings-->
-        <string name="text_configuration">Configuracion</string>
-        <string name="text_name_c">Nombre</string>
-        <string name="text_phone_c">Número</string>
-        <string name="text_relation_c">Relación</string>
-        <string name="text_contact_1_c">Contacto #1</string>
-        <string name="text_contact_2_c">Contacto #2</string>
-        <string name="text_user_photo">Foto del usuario</string>
-        <!--Text-Buttons-->
-        <string name="change_button">Actualizar</string>
-        <string name="update_changes_button">Guardar cambios</string>
-        <string name="cancel_changes_button">Cancelar</string>
+    <!--Text-Strings-->
+    <string name="text_configuration">Configuracion</string>
+    <string name="text_name_c">Nombre</string>
+    <string name="text_phone_c">Número</string>
+    <string name="text_relation_c">Relación</string>
+    <string name="text_contact_1_c">Contacto #1</string>
+    <string name="text_contact_2_c">Contacto #2</string>
+    <string name="text_user_photo">Foto del usuario</string>
+    <!--Text-Buttons-->
+    <string name="change_button">Actualizar</string>
+    <string name="update_changes_button">Guardar cambios</string>
+    <string name="cancel_changes_button">Cancelar</string>
 
-        <!--Temporales-->
-            <string name="hint_c_name">Nombre de la persona</string>
-            <string name="hint_c_address">Dirección de la persona</string>
-            <string name="hint_c_relation">Relación con la persona</string>
-            <string name="hint_c_phone">Número de la persona</string>
+    <!--Temporales-->
+    <string name="hint_c_name">Nombre de la persona</string>
+    <string name="hint_c_address">Dirección de la persona</string>
+    <string name="hint_c_relation">Relación con la persona</string>
+    <string name="hint_c_phone">Número de la persona</string>
 
+    <!--Tipos de violencia activity-->
+    <string name="text_Title_Violence">¿Qué es la violencia?</string>
+    <string name="text_description_violence">La violencia es cualquier acción u omisión que cause daño físico, psicológico, sexual, económico o patrimonial, ya sea de manera visible o silenciosa. Se basa en el abuso de poder, y muchas veces ocurre en relaciones cercanas, como de pareja, familia o trabajo.</string>
+    <string name="text_types_violence">Tipos de violencia</string>
+    <string name="text_lab_physyc">Violencia física</string>
+    <string name="text_descripcion_phisyc">Es cualquier acto que cause daño corporal a otra persona, como golpes, empujones, jalones, quemaduras, bofetadas, estrangulamientos o uso de objetos para agredir.
+    Este tipo de violencia puede dejar lesiones visibles o internas, y suele escalar si no se detiene a tiempo.</string>
 
 </resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/rosaP"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TiposViolencia"
+        android:background="@color/lavanda">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_Title_Violence"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textColor="@color/azulito"
+            />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgVIolencia"
+            android:layout_width="match_parent"
+            android:layout_height="254dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/violencia" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+        <TextView
+            android:id="@+id/label_descripcion_violencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_description_violence"
+            android:textSize="20sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="10dp"
+            android:lineSpacingExtra="3dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+        <TextView
+            android:id="@+id/label_Tipos_Violencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_types_violence"
+            android:textSize="25sp"
+            android:textColor="@color/azulito"
+            />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+
+        <TextView
+            android:id="@+id/label_violencia_fisica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_lab_physyc"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="horizontal"
+        tools:context=".TiposViolencia">
+
+        <TextView
+            android:id="@+id/label_descripcion_fisica"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_descripcion_phisyc"
+            android:textSize="20sp"
+            android:textAlignment="textStart"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textColorHint="#555555"
+            android:background="@drawable/degradado_tipos_violencia"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

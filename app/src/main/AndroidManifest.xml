@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Alert_app"
         tools:targetApi="31">
         <activity
+            android:name=".TiposViolencia"
+            android:exported="false" />
+        <activity
             android:name=".configurationActivity"
             android:exported="false" />
         <activity
