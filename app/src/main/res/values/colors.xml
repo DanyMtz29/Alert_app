@@ -7,6 +7,11 @@
     <color name="rosaa">#f10b89</color>
     <color name="rosaP">#FCE4EC</color>
     <color name="moradoF">#390330</color>
+    <color name="rosaPastelClaro">#FFC1CC</color>
+    <color name="rosaPastelMedio">#FFABC1</color>
+    <color name="rosaPastelOscuro">#FF8AA0</color>
+    <color name="lilaPastelMedio">#D3BCEB</color>
+    <color name="lilaPastelOscuro">#C1A0E3</color>
 
 
 </resources>
