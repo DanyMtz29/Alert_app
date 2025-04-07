@@ -53,4 +53,10 @@
     <string name="text_descripcion_phisyc">Es cualquier acto que cause daño corporal a otra persona, como golpes, empujones, jalones, quemaduras, bofetadas, estrangulamientos o uso de objetos para agredir.
     Este tipo de violencia puede dejar lesiones visibles o internas, y suele escalar si no se detiene a tiempo.</string>
 
+    <string name="text_lab_psicologic">Violencia psicológica</string>
+    <string name="text_descripcion_psicologic">Este tipo de violencia se tratan asuntos como Insultos, humillaciones, amenazas, intimidación, celos, control y manipulación emocional. Daña la autoestima y puede hacerte dudar de tu valor o incluso de tu percepción de la realidad.</string>
+    
+    <string name="text_lab_sexual">Violencia sexual</string>
+    <string name="text_descripcion_sexual">En este tipo de violencia se fuerza a la persona a una persona a tener relaciones sexuales sin consentimineto. Incluye cosas como manoseos, comentarios sexuales no deseados, y la grabación o difusión de contenido íntimo</string>
+
 </resources>
