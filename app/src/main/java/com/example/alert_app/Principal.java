@@ -30,19 +30,15 @@ public class Principal extends AppCompatActivity {
 
                 // Configurar el listener usando if-else para cada opción
                 popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-
-                Intent i;
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
                         int id = item.getItemId();
                         if (id == R.id.menu_informacion) {
                             Toast.makeText(Principal.this, "Información seleccionada", Toast.LENGTH_SHORT).show();
-                            i = new Intent(Principal.this, informationActivity.class);
-                            startActivity(i);
                         } else if (id == R.id.menu_configuracion) {
                             Toast.makeText(Principal.this, "Configuración seleccionada", Toast.LENGTH_SHORT).show();
-                            i = new Intent(Principal.this, configurationActivity.class);
-                            startActivity(i);
+                            Intent intent = new Intent(Principal.this, configurationActivity.class);
+                            startActivity(intent);
                         } else if (id == R.id.menu_alertas_emitidas) {
                             Toast.makeText(Principal.this, "Alertas Emitidas seleccionadas", Toast.LENGTH_SHORT).show();
                         } else if (id == R.id.menu_tomar_foto) {
