@@ -13,12 +13,11 @@
         android:theme="@style/Theme.Alert_app"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
-            android:name=".TiposViolencia"
-=======
             android:name=".informationActivity"
->>>>>>> main
             android:exported="false" />
+        <activity
+        android:name=".TiposViolencia"
+        android:exported="false" />
         <activity
             android:name=".configurationActivity"
             android:exported="false" />

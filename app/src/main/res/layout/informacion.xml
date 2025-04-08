@@ -87,6 +87,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/lilaPastelMedio"
+                android:onClick="typesViolence"
                 android:text="Tipos de violencia"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
