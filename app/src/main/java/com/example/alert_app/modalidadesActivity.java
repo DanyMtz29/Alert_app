@@ -1,5 +1,6 @@
 package com.example.alert_app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -50,5 +51,11 @@ public class modalidadesActivity extends AppCompatActivity {
                 im.setImageResource(R.drawable.flecha_abajo);
             }
         });
+    }
+
+    public void back_modalidades(View v){
+        Intent i =new Intent(modalidadesActivity.this, informationActivity.class);
+        startActivity(i);
+        this.finish();
     }
 }

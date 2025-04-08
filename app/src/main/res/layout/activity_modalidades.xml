@@ -289,10 +289,19 @@
 
         <!--Fin de la etiqueta de modalidad noviazgo-->
 
-        <View
-            android:id="@+id/viewSeparacionUltma"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/botonRegresar"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="@string/button_back"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/rosaPastelMedio"
+            android:onClick="back_modalidades"
+            />
 
     </LinearLayout>
 </ScrollView>
