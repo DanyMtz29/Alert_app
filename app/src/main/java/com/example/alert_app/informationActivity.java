@@ -30,5 +30,8 @@ public class informationActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-
+    public void modalidadesButton(View v){
+        i = new Intent(informationActivity.this, modalidadesActivity.class);
+        startActivity(i);
+    }
 }

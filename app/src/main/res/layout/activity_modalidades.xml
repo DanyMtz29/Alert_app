@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/rosaP"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".modalidadesActivity"
+        android:background="@color/lavanda">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_lab_modalidades"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textColor="@color/azulito"
+            />
+
+        <!-- Contenedor del título + flecha -->
+        <LinearLayout
+            android:id="@+id/header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/rosaP"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/titulo1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Violencia Familiar o Doméstica"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/azulito" />
+
+            <ImageView
+                android:id="@+id/flecha1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha_abajo" />
+        </LinearLayout>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/desc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ocurre dentro del hogar, puede ser ejercida por la pareja, familiares u otras personas cercanas. Se manifiesta en cualquiera de los tipos de violencia."
+            android:visibility="gone"
+            android:padding="10dp"
+            android:background="@color/lavanda" />
+
+
+    </LinearLayout>
+</ScrollView>

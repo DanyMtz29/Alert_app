@@ -120,7 +120,8 @@
                 android:text="Modalidades de violencia"
                 android:textColor="@color/moradoF"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="modalidadesButton"/>
         </LinearLayout>
 
         <LinearLayout
