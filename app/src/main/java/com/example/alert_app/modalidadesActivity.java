@@ -20,17 +20,34 @@ public class modalidadesActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_modalidades);
 
-        LinearLayout header1 = findViewById(R.id.header1);
-        TextView desc1 = findViewById(R.id.desc1);
-        ImageView flecha1 = findViewById(R.id.flecha1);
+        //Recuadoro de modalidad familiar
+        applyListener(findViewById(R.id.header1), findViewById(R.id.desc1), findViewById(R.id.flecha));
 
-        header1.setOnClickListener(v -> {
-            if (desc1.getVisibility() == View.GONE) {
-                desc1.setVisibility(View.VISIBLE);
-                flecha1.setImageResource(R.drawable.flecha_arriba);
+        //Recuadro de modalidad laboral
+        applyListener(findViewById(R.id.layout2),findViewById(R.id.text_desc_v_laboral),findViewById(R.id.flecha2));
+
+        //Recuadro de modalidad escolar
+        applyListener(findViewById(R.id.layoutEscolar), findViewById(R.id.text_desc_v_escolar),findViewById(R.id.flechaEscolar) );
+
+        //Recuadro de modalidad comunidad
+        applyListener(findViewById(R.id.layoutComunidad), findViewById(R.id.text_desc_v_comunidad), findViewById(R.id.flechaComunidad));
+
+        //Recuadro de modalidad institucional
+        applyListener(findViewById(R.id.layoutInstitucional), findViewById(R.id.text_desc_v_institucional), findViewById(R.id.flechaInstitucional));
+
+        //Recuadro de modalidad Noviazgo
+        applyListener(findViewById(R.id.layoutNoviazgo), findViewById(R.id.text_desc_v_noviazgo), findViewById(R.id.flechaNoviazgo));
+
+    }
+
+    public void applyListener(LinearLayout l, TextView t, ImageView im){
+        l.setOnClickListener( v -> {
+            if (t.getVisibility() == View.GONE) {
+                t.setVisibility(View.VISIBLE);
+                im.setImageResource(R.drawable.flecha_arriba);
             } else {
-                desc1.setVisibility(View.GONE);
-                flecha1.setImageResource(R.drawable.flecha_abajo);
+                t.setVisibility(View.GONE);
+                im.setImageResource(R.drawable.flecha_abajo);
             }
         });
     }

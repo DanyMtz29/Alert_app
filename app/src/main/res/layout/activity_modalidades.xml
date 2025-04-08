@@ -7,7 +7,7 @@
     android:backgroundTint="@color/rosaP"
     android:fillViewport="true">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -27,7 +27,30 @@
             android:textColor="@color/azulito"
             />
 
-        <!-- Contenedor del título + flecha -->
+        <View
+            android:id="@+id/sep1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+
+        <TextView
+            android:id="@+id/text_modalidades_violencia"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:justificationMode="inter_word"
+            android:text="@string/text_modalidades"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/sep2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+        <!-- layout vioelencia familiar -->
         <LinearLayout
             android:id="@+id/header1"
             android:layout_width="match_parent"
@@ -38,32 +61,238 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/titulo1"
+                android:id="@+id/lab_mod_familiar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Violencia Familiar o Doméstica"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="@color/azulito" />
+                android:text="@string/text_lab_v_familiar"
+                android:textColor="@color/azulito"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/flecha1"
+                android:id="@+id/flecha"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/flecha_abajo" />
         </LinearLayout>
 
-        <!-- Descripción -->
         <TextView
             android:id="@+id/desc1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ocurre dentro del hogar, puede ser ejercida por la pareja, familiares u otras personas cercanas. Se manifiesta en cualquiera de los tipos de violencia."
-            android:visibility="gone"
+            android:background="@color/lavanda"
             android:padding="10dp"
-            android:background="@color/lavanda" />
+            android:text="@string/text_mod_familiar"
+            android:textSize="18sp"
+            android:visibility="gone" />
 
+        <!--Fin de la etiqueta de modalidad familiar-->
+
+        <!-- layout vioelencia familiar -->
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/rosaP"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/lab_mod_laboral"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_lab_v_laboral"
+                android:textColor="@color/azulito"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/flecha2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha_abajo" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_desc_v_laboral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:padding="10dp"
+            android:text="@string/text_mod_laboral"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!--Fin de la etiqueta de modalidad familiar-->
+
+        <!-- layout vioelencia escolar -->
+        <LinearLayout
+            android:id="@+id/layoutEscolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/rosaP"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/lab_mod_escolar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_lab_v_escolar"
+                android:textColor="@color/azulito"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/flechaEscolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha_abajo" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_desc_v_escolar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:padding="10dp"
+            android:text="@string/text_mod_escolar"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!--Fin de la etiqueta de modalidad escolar-->
+
+        <!-- layout vioelencia comunidad -->
+        <LinearLayout
+            android:id="@+id/layoutComunidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/rosaP"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/lab_mod_comunidad"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_lab_v_comunidad"
+                android:textColor="@color/azulito"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/flechaComunidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha_abajo" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_desc_v_comunidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:padding="10dp"
+            android:text="@string/text_mod_comunidad"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!--Fin de la etiqueta de modalidad comunidad-->
+
+        <!-- layout vioelencia institucional -->
+        <LinearLayout
+            android:id="@+id/layoutInstitucional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/rosaP"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/lab_mod_institucional"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_lab_v_institucional"
+                android:textColor="@color/azulito"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/flechaInstitucional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha_abajo" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_desc_v_institucional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:padding="10dp"
+            android:text="@string/text_mod_institucional"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!--Fin de la etiqueta de modalidad institucional-->
+
+        <!-- layout vioelencia noviazgo -->
+        <LinearLayout
+            android:id="@+id/layoutNoviazgo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/rosaP"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/lab_mod_noviazgo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/text_lab_v_noviazgo"
+                android:textColor="@color/azulito"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/flechaNoviazgo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/flecha_abajo" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/text_desc_v_noviazgo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:padding="10dp"
+            android:text="@string/text_mod_noviazgo"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <!--Fin de la etiqueta de modalidad noviazgo-->
+
+        <View
+            android:id="@+id/viewSeparacionUltma"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
 
     </LinearLayout>
 </ScrollView>
