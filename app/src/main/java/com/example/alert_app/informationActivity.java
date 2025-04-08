@@ -25,6 +25,10 @@ public class informationActivity extends AppCompatActivity {
         i = new Intent(informationActivity.this, TiposViolencia.class);
         startActivity(i);
     }
+    public void alertButton(View v){
+        i = new Intent(informationActivity.this, Principal.class);
+        startActivity(i);
+    }
 
 
 }

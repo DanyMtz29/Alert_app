@@ -58,5 +58,17 @@
     
     <string name="text_lab_sexual">Violencia sexual</string>
     <string name="text_descripcion_sexual">En este tipo de violencia se fuerza a la persona a una persona a tener relaciones sexuales sin consentimineto. Incluye cosas como manoseos, comentarios sexuales no deseados, y la grabación o difusión de contenido íntimo</string>
-
+    
+    <string name="text_lab_economic">Violencia económica</string>
+    <string name="text_descripcion_economic">Ocurre cuando alguien controla tu dinero, te impide trabajar, estudiar o acceder a recursos básicos.
+También incluye retener tus documentos, quitarte tus ingresos o tomar decisiones financieras sin tu consentimiento.</string>
+    
+    <string name="text_lab_digital">Violencia digital</string>
+    <string name="text_descripcion_digital">Es cuando una persona usa la tecnología para dañar, controlar o acosar.
+Incluye espiar tu celular, revisar tus redes sin permiso, amenazar por mensajes, o compartir contenido íntimo sin tu consentimiento.</string>
+    
+    <string name="text_lab_symbolic">Violencia simbólica</string>
+    <string name="text_descripcion_symbolic">Son mensajes, estereotipos, imágenes o actitudes que refuerzan la desigualdad, discriminación o inferioridad hacia las mujeres.
+Suele estar presente en medios, chistes, publicidad o normas culturales que normalizan la violencia.</string>
+    <string name="button_back">Regresar</string>
 </resources>
