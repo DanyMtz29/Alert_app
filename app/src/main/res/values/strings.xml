@@ -89,4 +89,18 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
     <string name="text_mod_institucional">Cuando instituciones públicas o privadas discriminan, ignoran o maltratan a una mujer en proceso de denuncia.</string>
     <string name="text_mod_noviazgo">Entre parejas sentimentales. Se puede dar con celos, control, insultos, presión sexual o manipulación.</string>
 
+    <!--Centros de informacion-->
+    <string name="text_direccion_centros_informacion">Dirección</string>
+    <string name="text_telefonos_centros_informacion">Teléfonos</string>
+    <string name="text_horario_centros_informacion">Horarios de atención</string>
+
+    <string name="text_lab_Centros_informacion">Centros de información</string>
+    <string name="text_tit_centro_justicia">Centro de Justicia y Empoderamiento para las Mujeres de Torreón</string>
+    <string name="text_dir_centro_justica">Calzada Francisco Sarabia s/n, Colonia San Felipe, C.P. 27085, Torreón, Coahuila.</string>
+    <string name="text_tel_centro1_justicia">(871) 222 6300 – Principal</string>
+    <string name="text_tel2_centro_justicia">(871) 222 6315 – Guardia (24 horas)</string>
+    <string name="text_horario_centro_justicia">24 horas, todos los días.</string>
+
+
+
 </resources>

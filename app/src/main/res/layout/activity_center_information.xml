@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".centerInformationACtivity"
+    android:background="@color/lavanda">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/text_lab_Centros_informacion"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textColor="@color/azulito"
+        />
+
+    <View
+        android:id="@+id/viewCentros1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/imgJusticia"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/centro_justicia_mujeres"/>
+
+    <View
+        android:id="@+id/viewCentros2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <TextView
+        android:id="@+id/text_lab_centro_justica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:justificationMode="inter_word"
+        android:text="@string/text_tit_centro_justicia"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <View
+        android:id="@+id/viewCentros3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavanda"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="top"
+        tools:context=".TiposViolencia">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/img_direccion" />
+
+        <LinearLayout
+            android:id="@+id/lay2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="8dp">
+
+            <TextView
+                android:id="@+id/text_desc_centros_justica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Dirección"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/text_direccion_CentroJust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="4dp"
+                android:text="Calzada Francisco Sarabia s/n, Colonia San Felipe, C.P. 27085"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
