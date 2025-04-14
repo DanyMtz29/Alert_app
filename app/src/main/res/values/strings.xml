@@ -38,6 +38,8 @@
     <string name="change_button">Actualizar</string>
     <string name="update_changes_button">Guardar cambios</string>
     <string name="cancel_changes_button">Cancelar</string>
+    <string name="call_button">Llamar</string>
+    <string name="view_map">Ver en mapa</string>
 
     <!--Temporales-->
     <string name="hint_c_name">Nombre de la persona</string>
@@ -94,12 +96,19 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
     <string name="text_telefonos_centros_informacion">Teléfonos</string>
     <string name="text_horario_centros_informacion">Horarios de atención</string>
 
+    <!--Centro de justicia y empoderamiento-->
     <string name="text_lab_Centros_informacion">Centros de información</string>
     <string name="text_tit_centro_justicia">Centro de Justicia y Empoderamiento para las Mujeres de Torreón</string>
     <string name="text_dir_centro_justica">Calzada Francisco Sarabia s/n, Colonia San Felipe, C.P. 27085, Torreón, Coahuila.</string>
     <string name="text_tel_centro1_justicia">(871) 222 6300 – Principal</string>
     <string name="text_tel2_centro_justicia">(871) 222 6315 – Guardia (24 horas)</string>
     <string name="text_horario_centro_justicia">24 horas, todos los días.</string>
+
+    <!--Instituto municial de la mujer-->
+    <string name="text_tit_ins_mujer">Instituto Municipal de la Mujer de Torreón</string>
+    <string name="text_dir_ins_mujer">Prolongación Colón y Calle Delicias Col, Luis Echeverría Álvarez, 27220 Torreón, Coah.</string>
+    <string name="text_tel_ins_mujer">(871) 500 7419 </string>
+    <string name="text_hor_ins_mujer">Lunes a viernes, de 8:00 a.m. a 4:00 p.m</string>
 
 
 

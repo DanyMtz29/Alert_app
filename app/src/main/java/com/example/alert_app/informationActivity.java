@@ -34,4 +34,9 @@ public class informationActivity extends AppCompatActivity {
         i = new Intent(informationActivity.this, modalidadesActivity.class);
         startActivity(i);
     }
+
+    public void centerInformationButton(View v){
+        i = new Intent(informationActivity.this, centerInformationACtivity.class);
+        startActivity(i);
+    }
 }
