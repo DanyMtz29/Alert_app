@@ -39,4 +39,9 @@ public class informationActivity extends AppCompatActivity {
         i = new Intent(informationActivity.this, centerInformationACtivity.class);
         startActivity(i);
     }
+
+    public void supportNumbersButton(View v){
+        i = new Intent(informationActivity.this, supportNumbersActivity.class);
+        startActivity(i);
+    }
 }

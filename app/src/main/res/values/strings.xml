@@ -110,6 +110,24 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
     <string name="text_tel_ins_mujer">(871) 500 7419 </string>
     <string name="text_hor_ins_mujer">Lunes a viernes, de 8:00 a.m. a 4:00 p.m</string>
 
+    <!--Numeros de atencion-->
+    <string name="text_support_numbers">Numeros de atención</string>
+    <string name="text_emegencies">Emergencias generales</string>
+    <string name="text_supp_911">Teléfono: 911</string>
+    <string name="text_supp_911_desc">Línea nacional para reportar cualquier tipo de emergencia: violencia, accidentes, delitos, etc.</string>
+    <string name="text_municipalPol">Policia municipal de Torreón</string>
+    <string name="text_police_tel">Teléfono: 871 729 0099</string>
+    <string name="text_police_desc">Atención inmediata para reportar delitos o solicitar apoyo policial.</string>
+    <string name="text_justiceCen">Centro de Justicia y Empoderamiento (CJEM)</string>
+    <string name="text_justiceCen_tel">Teléfono: 871 222 6300</string>
+    <string name="text_justiceCen_desc">Atención integral y confidencial a mujeres en situación de violencia.</string>
+    <string name="text_iim">Instituto Municipal de la Mujer (IMM).</string>
+    <string name="text_iim_tel">Teléfono: 871 500 7419</string>
+    <string name="text_imm_desc">Ofrece asesoría legal, psicológica y talleres de empoderamiento.</string>
+    <string name="text_ViolenceLine">Línea Nacional Contra la Violencia</string>
+    <string name="text_ViolenceLine_tel">Teléfono: 800 911 25 11</string>
+    <string name="text_ViolenceLine_desc">Disponible las 24 horas para brindar apoyo psicológico y legal gratuito a mujeres víctimas de violencia.</string>
+
 
 
 </resources>

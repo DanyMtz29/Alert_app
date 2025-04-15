@@ -167,7 +167,8 @@
                 android:text="Números de atención"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="supportNumbersButton"/>
         </LinearLayout>
 
         <LinearLayout
