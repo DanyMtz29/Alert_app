@@ -141,4 +141,53 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
     <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales</string>
     <string name="text_acciones7_violentometro">-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
 
+    <string name="text_aviso_privacidad">
+    Mujer Segura es una herramienta desarrollada para brindar asistencia en situaciones de emergencia.\n
+    Comprometidos con la protección de tus datos personales, te informamos lo siguiente:\n\n
+
+    ¿Quién es el responsable del tratamiento de tus datos?\n
+    Nombre: Daniel Arnulfo Juarez Martinez. Daniela Aldaco Hernandez\n
+    Correo: mdani1512@gmail.com\n\n
+
+    ¿Qué datos recopilamos?\n
+    - Nombre completo\n
+    - Número de teléfono\n
+    - Dirección de domicilio\n
+    - Fotografía\n
+    - Ubicación geográfica\n
+    - Contactos de emergencia\n
+    - Fotografías capturadas durante una alerta\n\n
+
+    Finalidad del tratamiento:\n
+    - Enviar alertas a contactos de emergencia y autoridades\n
+    - Compartir ubicación durante emergencias\n
+    - Registrar y guardar evidencia\n
+    - Fines estadísticos y de mejora del servicio\n\n
+
+    Legitimación:\n
+    - Consentimiento del usuario\n
+    - Protección de intereses vitales\n\n
+
+    Compartición de datos:\n
+    - Autoridades y contactos de emergencia únicamente en situaciones necesarias\n
+    - Nunca para fines comerciales\n\n
+
+    Conservación:\n
+    - Solo durante el tiempo necesario para los fines establecidos\n\n
+
+    Derechos del usuario:\n
+    Puedes ejercer los derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) escribiendo a mdani1512@gmail.com.\n\n
+
+    Medidas de seguridad:\n
+    Aplicamos medidas técnicas y organizativas para proteger tu información.\n\n
+
+    Cambios en este aviso:\n
+    Cualquier modificación será comunicada dentro de la Aplicación.\n\n
+
+    Fecha de última actualización: 15 de abril de 2025
+</string>
+
+    <string name="text_privacyNotice">Aviso de privacidad</string>
+
+
 </resources>
