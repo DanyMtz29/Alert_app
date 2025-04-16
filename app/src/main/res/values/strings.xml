@@ -38,6 +38,8 @@
     <string name="change_button">Actualizar</string>
     <string name="update_changes_button">Guardar cambios</string>
     <string name="cancel_changes_button">Cancelar</string>
+    <string name="call_button">Llamar</string>
+    <string name="view_map">Ver en mapa</string>
 
     <!--Temporales-->
     <string name="hint_c_name">Nombre de la persona</string>
@@ -45,5 +47,98 @@
     <string name="hint_c_relation">Relación con la persona</string>
     <string name="hint_c_phone">Número de la persona</string>
 
+    <!--Tipos de violencia activity-->
+    <string name="text_Title_Violence">¿Qué es la violencia?</string>
+    <string name="text_description_violence">La violencia es cualquier acción u omisión que cause daño físico, psicológico, sexual, económico o patrimonial, ya sea de manera visible o silenciosa. Se basa en el abuso de poder, y muchas veces ocurre en relaciones cercanas, como de pareja, familia o trabajo.</string>
+    <string name="text_types_violence">Tipos de violencia</string>
+    <string name="text_lab_physyc">Violencia física</string>
+    <string name="text_descripcion_phisyc">Es cualquier acto que cause daño corporal a otra persona, como golpes, empujones, jalones, quemaduras, bofetadas, estrangulamientos o uso de objetos para agredir.
+    Este tipo de violencia puede dejar lesiones visibles o internas, y suele escalar si no se detiene a tiempo.</string>
+
+    <string name="text_lab_psicologic">Violencia psicológica</string>
+    <string name="text_descripcion_psicologic">Este tipo de violencia se tratan asuntos como Insultos, humillaciones, amenazas, intimidación, celos, control y manipulación emocional. Daña la autoestima y puede hacerte dudar de tu valor o incluso de tu percepción de la realidad.</string>
+
+    <string name="text_lab_sexual">Violencia sexual</string>
+    <string name="text_descripcion_sexual">En este tipo de violencia se fuerza a la persona a una persona a tener relaciones sexuales sin consentimineto. Incluye cosas como manoseos, comentarios sexuales no deseados, y la grabación o difusión de contenido íntimo</string>
+
+    <string name="text_lab_economic">Violencia económica</string>
+    <string name="text_descripcion_economic">Ocurre cuando alguien controla tu dinero, te impide trabajar, estudiar o acceder a recursos básicos.
+También incluye retener tus documentos, quitarte tus ingresos o tomar decisiones financieras sin tu consentimiento.</string>
+
+    <string name="text_lab_digital">Violencia digital</string>
+    <string name="text_descripcion_digital">Es cuando una persona usa la tecnología para dañar, controlar o acosar.
+Incluye espiar tu celular, revisar tus redes sin permiso, amenazar por mensajes, o compartir contenido íntimo sin tu consentimiento.</string>
+
+    <string name="text_lab_symbolic">Violencia simbólica</string>
+    <string name="text_descripcion_symbolic">Son mensajes, estereotipos, imágenes o actitudes que refuerzan la desigualdad, discriminación o inferioridad hacia las mujeres.
+Suele estar presente en medios, chistes, publicidad o normas culturales que normalizan la violencia.</string>
+    <string name="button_back">Regresar</string>
+
+    <!--Modalidades de la violenca-->
+    <string name="text_lab_modalidades">Modalidades de violencia</string>
+    <string name="text_lab_v_familiar">Violencia familiar o domestica</string>
+    <string name="text_lab_v_laboral">Violencia laboral</string>
+    <string name="text_lab_v_escolar">Violencia escolar</string>
+    <string name="text_lab_v_comunidad">Violencia en la comunidad</string>
+    <string name="text_lab_v_institucional">Violencia institucional</string>
+    <string name="text_lab_v_noviazgo">Violencia en el noviazgo</string>
+
+    <string name="text_modalidades">La violencia contra las mujeres puede manifestarse de muchas formas. Conocerlas es el primer paso para prevenirla, detectarla y actuar.</string>
+    <string name="text_mod_familiar"> En el hogar, por parte de familiares o pareja. Puede ser física, psicológica, sexual o económica.</string>
+    <string name="text_mod_laboral">Ocurre en el trabajo. Puede incluir acoso, discriminación, intimidación o control económico.</string>
+    <string name="text_mod_escolar">Entre estudiantes o del personal hacia el alumnado. Incluye bullying, amenazas, exclusión o humillaciones.</string>
+    <string name="text_mod_comunidad">En la calle, transporte público u otros espacios. Ejemplo: acoso callejero o agresiones de desconocidos.</string>
+    <string name="text_mod_institucional">Cuando instituciones públicas o privadas discriminan, ignoran o maltratan a una mujer en proceso de denuncia.</string>
+    <string name="text_mod_noviazgo">Entre parejas sentimentales. Se puede dar con celos, control, insultos, presión sexual o manipulación.</string>
+
+    <!--Centros de informacion-->
+    <string name="text_direccion_centros_informacion">Dirección</string>
+    <string name="text_telefonos_centros_informacion">Teléfonos</string>
+    <string name="text_horario_centros_informacion">Horarios de atención</string>
+
+    <!--Centro de justicia y empoderamiento-->
+    <string name="text_lab_Centros_informacion">Centros de información</string>
+    <string name="text_tit_centro_justicia">Centro de Justicia y Empoderamiento para las Mujeres de Torreón</string>
+    <string name="text_dir_centro_justica">Calzada Francisco Sarabia s/n, Colonia San Felipe, C.P. 27085, Torreón, Coahuila.</string>
+    <string name="text_tel_centro1_justicia">(871) 222 6300 – Principal</string>
+    <string name="text_tel2_centro_justicia">(871) 222 6315 – Guardia (24 horas)</string>
+    <string name="text_horario_centro_justicia">24 horas, todos los días.</string>
+
+    <!--Instituto municial de la mujer-->
+    <string name="text_tit_ins_mujer">Instituto Municipal de la Mujer de Torreón</string>
+    <string name="text_dir_ins_mujer">Prolongación Colón y Calle Delicias Col, Luis Echeverría Álvarez, 27220 Torreón, Coah.</string>
+    <string name="text_tel_ins_mujer">(871) 500 7419 </string>
+    <string name="text_hor_ins_mujer">Lunes a viernes, de 8:00 a.m. a 4:00 p.m</string>
+
+    <!--Numeros de atencion-->
+    <string name="text_support_numbers">Numeros de atención</string>
+    <string name="text_emegencies">Emergencias generales</string>
+    <string name="text_supp_911">Teléfono: 911</string>
+    <string name="text_supp_911_desc">Línea nacional para reportar cualquier tipo de emergencia: violencia, accidentes, delitos, etc.</string>
+    <string name="text_municipalPol">Policia municipal de Torreón</string>
+    <string name="text_police_tel">Teléfono: 871 729 0099</string>
+    <string name="text_police_desc">Atención inmediata para reportar delitos o solicitar apoyo policial.</string>
+    <string name="text_justiceCen">Centro de Justicia y Empoderamiento (CJEM)</string>
+    <string name="text_justiceCen_tel">Teléfono: 871 222 6300</string>
+    <string name="text_justiceCen_desc">Atención integral y confidencial a mujeres en situación de violencia.</string>
+    <string name="text_iim">Instituto Municipal de la Mujer (IMM).</string>
+    <string name="text_iim_tel">Teléfono: 871 500 7419</string>
+    <string name="text_imm_desc">Ofrece asesoría legal, psicológica y talleres de empoderamiento.</string>
+    <string name="text_ViolenceLine">Línea Nacional Contra la Violencia</string>
+    <string name="text_ViolenceLine_tel">Teléfono: 800 911 25 11</string>
+    <string name="text_ViolenceLine_desc">Disponible las 24 horas para brindar apoyo psicológico y legal gratuito a mujeres víctimas de violencia.</string>
+
+    <!--Activity violentometro-->
+    <string name="text_violentometro">Violentómetro</string>
+    <string name="text_violentometro_1">¡Ten cuidado!. ¡La violencia aumentará!</string>
+    <string name="text_violentometro_2">¡Reacciona!. ¡No te dejes destruir!</string>
+    <string name="text_violentometro_3">¡Necesitas ayuda profesional!</string>
+    <string name="text_acciones_violentometro">-Bromas Hirientes\n-Chantajear\n-Mentir/Engañar\n-Ignorar, Ley del hielo</string>
+    <string name="text_acciones2_violentometro">-Celar\n-Acechar/Stalkear redes sociales\n-Culpabilizar\n-Descalificar</string>
+    <string name="text_acciones3_violentometro">-Ridiculizar/Ofender\n-Humillar en público\n-Intimidar, amenazar\n-Controlar, prohibir (amistades, familiares, dinero, lugares, apariencia, actividades, celular, mails y redes sociales)</string>
+    <string name="text_acciones4_violentometro">-Destruir articulos personales\n-Manosear\n-Caricias agresivas\n-Golpear "Jugando"</string>
+    <string name="text_acciones5_violentometro">-Pellizcar, arañar\n-Empujar, jalonear\n-Cachetear\n-Patear</string>
+    <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales</string>
+    <string name="text_acciones7_violentometro">-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
 
 </resources>

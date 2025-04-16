@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/rosaP"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".centerInformationACtivity"
+        android:background="@color/lavanda">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/text_lab_Centros_informacion"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textColor="@color/azulito"
+            />
+
+        <View
+            android:id="@+id/viewCentros1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:id="@+id/imgJusticia"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/centro_justicia_mujeres"/>
+
+        <View
+            android:id="@+id/viewCentros2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:id="@+id/text_lab_centro_justica"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:justificationMode="inter_word"
+            android:text="@string/text_tit_centro_justicia"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <View
+            android:id="@+id/viewCentros3"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <!--Inicio del layout de direccion-->
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="top"
+            tools:context=".TiposViolencia">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/img_direccion" />
+
+            <LinearLayout
+                android:id="@+id/lay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:id="@+id/text_desc_centros_justica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/text_direccion_centros_informacion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_direccion_Centro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_dir_centro_justica"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout><!--Fin del layout Direccion-->
+
+        <LinearLayout
+            android:id="@+id/layTel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="top"
+            tools:context=".TiposViolencia">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/img_tel" />
+
+            <LinearLayout
+                android:id="@+id/layTel1_"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:id="@+id/text_tel_centro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/text_telefonos_centros_informacion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_tel1_CentroJust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_tel_centro1_justicia"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/text_tel2_CentroJust1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_tel2_centro_justicia"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout><!--Fin del layout de telefonos-->
+
+    </LinearLayout>
+        <!--Inicio del layout de horario de atencion-->
+        <LinearLayout
+            android:id="@+id/lay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="top"
+            tools:context=".TiposViolencia">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/img_horario_atencion" />
+
+            <LinearLayout
+                android:id="@+id/layhorarios"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:id="@+id/text_desc_horarios_justica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/text_horario_centros_informacion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_horario_centro_justicia"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout><!--Fin del layout horario de atencion-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_call_cjm"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lilaPastelOscuro"
+                android:text="@string/call_button"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btn_viewMap_cjm"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lilaPastelOscuro"
+                android:text="@string/view_map"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img_instituto_muj"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:justificationMode="inter_word"
+            android:text="@string/text_tit_ins_mujer"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <!--Inicio del layout de direccion-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="top"
+            tools:context=".TiposViolencia">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/img_direccion" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/text_direccion_centros_informacion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_dir_ins_mujer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout><!--Fin del layout Direccion-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="top"
+            tools:context=".TiposViolencia">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/img_tel" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/text_telefonos_centros_informacion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_tel_ins_mujer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout><!--Fin del layout de telefonos-->
+
+        </LinearLayout>
+        <!--Inicio del layout de horario de atencion-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lavanda"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="top"
+            tools:context=".TiposViolencia">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/img_horario_atencion" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/text_horario_centros_informacion"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/text_hor_ins_mujer"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout><!--Fin del layout horario de atencion-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_call_instituto"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lilaPastelOscuro"
+                android:text="@string/call_button"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btn_viewMap_instituto"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/lilaPastelOscuro"
+                android:text="@string/view_map"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/botonRegresar"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="@string/button_back"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lilaPastelMedio"
+            android:onClick="backCenter"
+            />
+    </LinearLayout>
+
+</ScrollView>

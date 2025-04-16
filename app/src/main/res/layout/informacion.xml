@@ -72,7 +72,8 @@
                 android:text="Alerta (botón emergencia)"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="alertButton"/>
         </LinearLayout>
 
         <LinearLayout
@@ -87,6 +88,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/lilaPastelMedio"
+                android:onClick="typesViolence"
                 android:text="Tipos de violencia"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
@@ -118,7 +120,8 @@
                 android:text="Modalidades de violencia"
                 android:textColor="@color/moradoF"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="modalidadesButton"/>
         </LinearLayout>
 
         <LinearLayout
@@ -136,7 +139,8 @@
                 android:text="Centros de atención"
                 android:textColor="@color/moradoF"
                 android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="centerInformationButton"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -163,7 +167,8 @@
                 android:text="Números de atención"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="supportNumbersButton"/>
         </LinearLayout>
 
         <LinearLayout
@@ -181,7 +186,8 @@
                 android:text="Violentómetro"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="violentometro"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
