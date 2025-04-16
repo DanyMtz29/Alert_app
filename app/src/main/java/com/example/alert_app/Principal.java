@@ -51,6 +51,8 @@ public class Principal extends AppCompatActivity {
                             startActivity(i);
                         } else if (id == R.id.menu_terminos) {
                             Toast.makeText(Principal.this, "Términos y Condiciones seleccionados", Toast.LENGTH_SHORT).show();
+                            i = new Intent(Principal.this, termsConditionsActivity.class);
+                            startActivity(i);
                         } else if (id == R.id.menu_aviso_privacidad) {
                             Toast.makeText(Principal.this, "Aviso de Privacidad seleccionado", Toast.LENGTH_SHORT).show();
                             i = new Intent(Principal.this, privacyNoticeActivity.class);
