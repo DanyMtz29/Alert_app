@@ -186,7 +186,8 @@
                 android:text="Violentómetro"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:onClick="violentometro"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

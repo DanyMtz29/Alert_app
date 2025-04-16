@@ -128,6 +128,17 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
     <string name="text_ViolenceLine_tel">Teléfono: 800 911 25 11</string>
     <string name="text_ViolenceLine_desc">Disponible las 24 horas para brindar apoyo psicológico y legal gratuito a mujeres víctimas de violencia.</string>
 
-
+    <!--Activity violentometro-->
+    <string name="text_violentometro">Violentómetro</string>
+    <string name="text_violentometro_1">¡Ten cuidado!. ¡La violencia aumentará!</string>
+    <string name="text_violentometro_2">¡Reacciona!. ¡No te dejes destruir!</string>
+    <string name="text_violentometro_3">¡Necesitas ayuda profesional!</string>
+    <string name="text_acciones_violentometro">-Bromas Hirientes\n-Chantajear\n-Mentir/Engañar\n-Ignorar, Ley del hielo</string>
+    <string name="text_acciones2_violentometro">-Celar\n-Acechar/Stalkear redes sociales\n-Culpabilizar\n-Descalificar</string>
+    <string name="text_acciones3_violentometro">-Ridiculizar/Ofender\n-Humillar en público\n-Intimidar, amenazar\n-Controlar, prohibir (amistades, familiares, dinero, lugares, apariencia, actividades, celular, mails y redes sociales)</string>
+    <string name="text_acciones4_violentometro">-Destruir articulos personales\n-Manosear\n-Caricias agresivas\n-Golpear "Jugando"</string>
+    <string name="text_acciones5_violentometro">-Pellizcar, arañar\n-Empujar, jalonear\n-Cachetear\n-Patear</string>
+    <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales</string>
+    <string name="text_acciones7_violentometro">-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
 
 </resources>

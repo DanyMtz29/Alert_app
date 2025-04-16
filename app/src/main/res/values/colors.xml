@@ -17,6 +17,10 @@
     <color name="rosaPastelOscuro">#FF8AA0</color>
     <color name="lilaPastelMedio">#D3BCEB</color>
     <color name="lilaPastelOscuro">#C1A0E3</color>
+    <color name="verdeClaro">#98cf7b</color>
+    <color name="amarilloMedio">#daea12</color>
+    <color name="naranjaFuerte">#f58827</color>
+    <color name="rojoFuerte">#d60404</color>
 
 
 </resources>

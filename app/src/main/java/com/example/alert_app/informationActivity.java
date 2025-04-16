@@ -18,30 +18,40 @@ public class informationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.informacion);
-
     }
 
     public void typesViolence(View v){
         i = new Intent(informationActivity.this, TiposViolencia.class);
         startActivity(i);
+        this.finish();
     }
     public void alertButton(View v){
         i = new Intent(informationActivity.this, Principal.class);
         startActivity(i);
+        this.finish();
     }
 
     public void modalidadesButton(View v){
         i = new Intent(informationActivity.this, modalidadesActivity.class);
         startActivity(i);
+        this.finish();
     }
 
     public void centerInformationButton(View v){
         i = new Intent(informationActivity.this, centerInformationACtivity.class);
         startActivity(i);
+        this.finish();
     }
 
     public void supportNumbersButton(View v){
         i = new Intent(informationActivity.this, supportNumbersActivity.class);
         startActivity(i);
+        this.finish();
+    }
+
+    public void violentometro(View v){
+        i = new Intent(informationActivity.this, violentometroActivity.class);
+        startActivity(i);
+        this.finish();
     }
 }
