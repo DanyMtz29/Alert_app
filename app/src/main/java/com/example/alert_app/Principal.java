@@ -47,6 +47,8 @@ public class Principal extends AppCompatActivity {
                             Toast.makeText(Principal.this, "Alertas Emitidas seleccionadas", Toast.LENGTH_SHORT).show();
                         } else if (id == R.id.menu_tomar_foto) {
                             Toast.makeText(Principal.this, "Tomar Foto seleccionada", Toast.LENGTH_SHORT).show();
+                            i = new Intent( "android.media.action.IMAGE_CAPTURE" );
+                            startActivity(i);
                         } else if (id == R.id.menu_terminos) {
                             Toast.makeText(Principal.this, "Términos y Condiciones seleccionados", Toast.LENGTH_SHORT).show();
                         } else if (id == R.id.menu_aviso_privacidad) {
