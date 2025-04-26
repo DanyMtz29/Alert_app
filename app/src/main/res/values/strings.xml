@@ -141,4 +141,95 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
     <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales</string>
     <string name="text_acciones7_violentometro">-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
 
+    <string name="text_aviso_privacidad">
+    Mujer Segura es una herramienta desarrollada para brindar asistencia en situaciones de emergencia.\n
+    Comprometidos con la protección de tus datos personales, te informamos lo siguiente:\n\n
+
+    ¿Quién es el responsable del tratamiento de tus datos?\n
+    Nombre: Daniel Arnulfo Juarez Martinez. Daniela Aldaco Hernandez\n
+    Correo: mdani1512@gmail.com\n\n
+
+    ¿Qué datos recopilamos?\n
+    - Nombre completo\n
+    - Número de teléfono\n
+    - Dirección de domicilio\n
+    - Fotografía\n
+    - Ubicación geográfica\n
+    - Contactos de emergencia\n
+    - Fotografías capturadas durante una alerta\n\n
+
+    Finalidad del tratamiento:\n
+    - Enviar alertas a contactos de emergencia y autoridades\n
+    - Compartir ubicación durante emergencias\n
+    - Registrar y guardar evidencia\n
+    - Fines estadísticos y de mejora del servicio\n\n
+
+    Legitimación:\n
+    - Consentimiento del usuario\n
+    - Protección de intereses vitales\n\n
+
+    Compartición de datos:\n
+    - Autoridades y contactos de emergencia únicamente en situaciones necesarias\n
+    - Nunca para fines comerciales\n\n
+
+    Conservación:\n
+    - Solo durante el tiempo necesario para los fines establecidos\n\n
+
+    Derechos del usuario:\n
+    Puedes ejercer los derechos de Acceso, Rectificación, Cancelación u Oposición (ARCO) escribiendo a mdani1512@gmail.com.\n\n
+
+    Medidas de seguridad:\n
+    Aplicamos medidas técnicas y organizativas para proteger tu información.\n\n
+
+    Cambios en este aviso:\n
+    Cualquier modificación será comunicada dentro de la Aplicación.\n\n
+
+    Fecha de última actualización: 15 de abril de 2025
+</string>
+
+    <string name="text_privacyNotice">Aviso de privacidad</string>
+    <string name="text_termsConditions">Términos y condiciones</string>
+    <string name="text_terminos_condiciones">
+    Términos y Condiciones de Uso\n\n
+
+    1. Aceptación de los términos\n
+    Al instalar y utilizar la aplicación Mujer Segura, aceptas los presentes Términos y Condiciones. Si no estás de acuerdo con alguno de ellos, no debes utilizar la Aplicación.\n\n
+
+    2. Objeto de la aplicación\n
+    La Aplicación tiene como finalidad proporcionar una herramienta de asistencia y comunicación de emergencias para mujeres en situaciones de violencia, permitiendo enviar alertas, ubicación y fotografías a contactos de confianza y autoridades de Seguridad Pública.\n\n
+
+    3. Registro de usuario\n
+    El usuario se compromete a proporcionar información veraz y actualizada, como su nombre, número telefónico, fotografía, domicilio y contactos de emergencia.\n
+    Esta información será utilizada exclusivamente para las funciones establecidas en el aviso de privacidad.\n\n
+
+    4. Uso adecuado\n
+    El usuario se compromete a utilizar la Aplicación únicamente para los fines establecidos, y se abstendrá de emplearla para reportes falsos, bromas o cualquier otro uso indebido que afecte a terceros o a las autoridades.\n\n
+
+    5. Responsabilidad del usuario\n
+    El usuario es responsable de mantener la confidencialidad de su información de acceso y del uso correcto del dispositivo. Cualquier uso no autorizado deberá ser reportado inmediatamente.\n\n
+
+    6. Acceso a funcionalidades del dispositivo\n
+    La Aplicación requiere acceso a ciertas funciones del dispositivo como:\n
+    - Ubicación en tiempo real (sólo al enviar alertas)\n
+    - Cámara (para capturar evidencias fotográficas)\n
+    - Acceso a contactos de emergencia registrados\n\n
+
+    7. Propiedad intelectual\n
+    Todos los derechos de la Aplicación, incluyendo su contenido, diseño y funcionalidades, pertenecen a sus desarrolladores. Queda prohibida la reproducción total o parcial sin autorización previa por escrito.\n\n
+
+    8. Modificaciones\n
+    Nos reservamos el derecho de modificar estos Términos y Condiciones en cualquier momento. Cualquier cambio será notificado en la Aplicación.\n\n
+
+    9. Limitación de responsabilidad\n
+    La Aplicación es una herramienta de apoyo. No se garantiza la respuesta inmediata por parte de las autoridades o contactos registrados, ni se asume responsabilidad por daños derivados del uso incorrecto de la app.\n\n
+
+    10. Legislación aplicable\n
+    Estos Términos se rigen por las leyes vigentes en México. Cualquier controversia será resuelta conforme a dichas leyes.\n\n
+
+    Fecha de última actualización: 15 de abril de 2025
+</string>
+
+
+
+
 </resources>
