@@ -72,7 +72,7 @@
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/btnAlerta"
             android:layout_width="250dp"
             android:layout_height="250dp"
             android:layout_weight="1"
@@ -112,11 +112,12 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButtonEscudo"
+                android:id="@+id/btnSegPub"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:background="@drawable/circular_button_background"
                 android:contentDescription="Llamada a seguridad pública"
+                android:onClick="llamarSeguridadPublica"
                 android:scaleType="centerInside"
                 android:src="@drawable/segmorado" />
 
@@ -139,11 +140,12 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/btn911"
                 android:layout_width="110dp"
                 android:layout_height="110dp"
                 android:backgroundTint="@color/lila"
                 android:fontFamily="sans-serif-medium"
+                android:onClick="llamar911"
                 android:text="911"
                 android:textColor="@color/moradoF"
                 android:textSize="34sp"

@@ -21,12 +21,12 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_violentometro"
             android:textAlignment="center"
-            android:textColor="@color/azulito"
+            android:textColor="@color/moradoF"
             android:textSize="34sp" />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            android:layout_height="20dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,113 +43,155 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical"
                 tools:context=".violentometroActivity">
+
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="411dp"
                     android:layout_height="wrap_content"
+                    android:background="@color/CUIDADO"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/text_violentometro_1"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:background="@color/verdeClaro"/>
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/CUIDADO"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/text_violentometro_1.1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
+                    android:background="@color/CUIDADO"
                     android:fontFamily="sans-serif-black"
+                    android:paddingTop="10dp"
                     android:text="@string/text_acciones_violentometro"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/verdeClaro"/>
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/CUIDADO"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/text_acciones2_violentometro"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@drawable/violentometro_verde_ama"/>
+                    android:textSize="20sp" />
+
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="411dp"
                     android:layout_height="wrap_content"
+                    android:background="@color/ALERTA"
                     android:fontFamily="sans-serif-black"
                     android:paddingTop="10dp"
                     android:text="@string/text_violentometro_2"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:background="@color/amarilloMedio"/>
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ALERTA"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/text_violentometro_2.1"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/ALERTA"
                     android:fontFamily="sans-serif-black"
                     android:paddingTop="10dp"
                     android:text="@string/text_acciones3_violentometro"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/amarilloMedio"/>
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/ALERTA"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/text_acciones4_violentometro"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/amarilloMedio"/>
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/ALERTA"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/text_acciones4_violentometro"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/amarilloMedio"/>
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/ALERTA"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/text_acciones5_violentometro"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@drawable/violentometro_ama_nar"/>
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/ALERTA"
                     android:fontFamily="sans-serif-black"
                     android:text="@string/text_acciones6_violentometro"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@drawable/violentometro_nar_rojo"/>
+                    android:textSize="20sp" />
+
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/URGENTE"
                     android:fontFamily="sans-serif-black"
                     android:paddingTop="10dp"
                     android:text="@string/text_violentometro_3"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:background="@color/rojoFuerte"/>
+                    android:textColor="@color/design_default_color_background"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/URGENTE"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/text_violentometro_3.1"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_background"
+                    android:textSize="18sp" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/URGENTE"
                     android:fontFamily="sans-serif-black"
                     android:paddingTop="10dp"
                     android:paddingBottom="20dp"
                     android:text="@string/text_acciones7_violentometro"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/rojoFuerte"
-                    />
+                    android:textColor="@color/design_default_color_background"
+                    android:textSize="20sp" />
             </LinearLayout>
         </LinearLayout>
         <Button

@@ -130,9 +130,12 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
 
     <!--Activity violentometro-->
     <string name="text_violentometro">Violentómetro</string>
-    <string name="text_violentometro_1">¡Ten cuidado!. ¡La violencia aumentará!</string>
-    <string name="text_violentometro_2">¡Reacciona!. ¡No te dejes destruir!</string>
-    <string name="text_violentometro_3">¡Necesitas ayuda profesional!</string>
+    <string name="text_violentometro_1">CUIDADO</string>
+    <string name="text_violentometro_1.1">La violencia aumentará</string>
+    <string name="text_violentometro_2">ALERTA</string>
+    <string name="text_violentometro_2.1">¡Reacciona! ¡No te dejes destruir!</string>
+    <string name="text_violentometro_3">URGENTE</string>
+    <string name="text_violentometro_3.1">¡Necesitas ayuda profesional!</string>
     <string name="text_acciones_violentometro">-Bromas Hirientes\n-Chantajear\n-Mentir/Engañar\n-Ignorar, Ley del hielo</string>
     <string name="text_acciones2_violentometro">-Celar\n-Acechar/Stalkear redes sociales\n-Culpabilizar\n-Descalificar</string>
     <string name="text_acciones3_violentometro">-Ridiculizar/Ofender\n-Humillar en público\n-Intimidar, amenazar\n-Controlar, prohibir (amistades, familiares, dinero, lugares, apariencia, actividades, celular, mails y redes sociales)</string>

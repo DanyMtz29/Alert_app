@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@color/lavanda"
     android:backgroundTint="@color/lavanda"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,11 +71,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="@color/rosaPastelClaro"
+                android:onClick="alertButton"
                 android:text="Alerta (botón emergencia)"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:onClick="alertButton"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -117,11 +119,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
                 android:backgroundTint="@color/lilaPastelMedio"
+                android:onClick="modalidadesButton"
                 android:text="Modalidades de violencia"
                 android:textColor="@color/moradoF"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:onClick="modalidadesButton"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -136,11 +138,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:backgroundTint="@color/rosaPastelClaro"
+                android:onClick="centerInformationButton"
                 android:text="Centros de atención"
                 android:textColor="@color/moradoF"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                android:onClick="centerInformationButton"/>
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
@@ -164,11 +166,11 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
                 android:backgroundTint="@color/rosaPastelClaro"
+                android:onClick="supportNumbersButton"
                 android:text="Números de atención"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:onClick="supportNumbersButton"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
@@ -183,11 +185,28 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
                 android:backgroundTint="@color/lilaPastelMedio"
+                android:onClick="violentometro"
                 android:text="Violentómetro"
                 android:textColor="@color/moradoF"
                 android:textSize="20sp"
-                android:textStyle="bold"
-                android:onClick="violentometro"/>
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
+
+    <View
+        android:id="@+id/view30"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <Button
+        android:id="@+id/botonRegresar2"
+        android:layout_width="181dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/lilaPastelOscuro"
+        android:onClick="backCenter"
+        android:text="@string/button_back"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 </LinearLayout>

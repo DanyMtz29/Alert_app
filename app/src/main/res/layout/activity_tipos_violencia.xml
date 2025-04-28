@@ -11,9 +11,11 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/lavanda"
         android:orientation="vertical"
-        tools:context=".TiposViolencia"
-        android:background="@color/lavanda">
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        tools:context=".TiposViolencia">
 
         <TextView
             android:id="@+id/textView4"
@@ -23,15 +25,13 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_Title_Violence"
             android:textAlignment="center"
-            android:textSize="34sp"
             android:textColor="@color/azulito"
-            />
+            android:textSize="34sp" />
 
         <View
             android:id="@+id/view1"
             android:layout_width="match_parent"
-            android:layout_height="20dp"
-            />
+            android:layout_height="20dp" />
 
         <ImageView
             android:id="@+id/imgVIolencia"
@@ -43,28 +43,25 @@
         <View
             android:id="@+id/view2"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            />
+            android:layout_height="40dp" />
 
         <TextView
             android:id="@+id/label_descripcion_violencia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/text_description_violence"
-            android:textSize="20sp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="10dp"
+            android:fontFamily="sans-serif-black"
             android:lineSpacingExtra="3dp"
+            android:text="@string/text_description_violence"
             android:textAlignment="viewStart"
             android:textColor="@color/black"
-            />
+            android:textSize="20sp" />
 
         <View
             android:id="@+id/view3"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            />
+            android:layout_height="40dp" />
 
         <TextView
             android:id="@+id/label_Tipos_Violencia"
@@ -72,15 +69,13 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/text_types_violence"
-            android:textSize="25sp"
             android:textColor="@color/azulito"
-            />
+            android:textSize="25sp" />
 
         <View
             android:id="@+id/view4"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
+            android:layout_height="30dp" />
 
         <TextView
             android:id="@+id/label_violencia_fisica"
@@ -88,9 +83,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_physyc"
-            android:textSize="24sp"
             android:textColor="@color/black"
-            />
+            android:textSize="24sp" />
 
         <LinearLayout
             android:id="@+id/layout2"
@@ -103,28 +97,25 @@
                 android:id="@+id/label_descripcion_fisica"
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
+                android:background="@drawable/degradado_tipos_violencia"
                 android:fontFamily="sans-serif-black"
-                android:text="@string/text_descripcion_phisyc"
-                android:textSize="20sp"
-                android:textAlignment="textStart"
+                android:justificationMode="inter_word"
                 android:padding="16dp"
+                android:text="@string/text_descripcion_phisyc"
+                android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textColorHint="#555555"
-                android:justificationMode="inter_word"
-                android:background="@drawable/degradado_tipos_violencia"
-                />
+                android:textSize="20sp" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="match_parent" />
         </LinearLayout><!--Fin del layout del primer tipo de violencia-->
 
         <View
             android:id="@+id/view5"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
+            android:layout_height="30dp" />
 
         <TextView
             android:id="@+id/label_violencia_psicologica"
@@ -133,9 +124,8 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_psicologic"
             android:textAlignment="textEnd"
-            android:textSize="24sp"
             android:textColor="@color/black"
-            />
+            android:textSize="24sp" />
 
         <LinearLayout
             android:id="@+id/layout3"
@@ -146,30 +136,28 @@
 
             <View
                 android:layout_width="80dp"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="match_parent" />
 
             <TextView
                 android:id="@+id/label_descripcion_psicologica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/degradado_violencia_psicologica"
+                android:background="@color/lilaPastelOscuro"
                 android:fontFamily="sans-serif-black"
+                android:justificationMode="inter_word"
                 android:layoutDirection="inherit"
                 android:padding="16dp"
                 android:text="@string/text_descripcion_phisyc"
                 android:textAlignment="textEnd"
                 android:textColor="@color/black"
                 android:textColorHint="#555555"
-                android:justificationMode="inter_word"
                 android:textSize="20sp" />
         </LinearLayout> <!--Fin del layout de violencia psicologica-->
 
         <View
             android:id="@+id/view6"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
+            android:layout_height="30dp" />
 
         <TextView
             android:id="@+id/label_violencia_sexual"
@@ -178,9 +166,8 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_sexual"
             android:textAlignment="textStart"
-            android:textSize="24sp"
             android:textColor="@color/black"
-            />
+            android:textSize="24sp" />
 
         <LinearLayout
             android:id="@+id/layout4"
@@ -195,26 +182,24 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/degradado_violencia_sexual"
                 android:fontFamily="sans-serif-black"
+                android:justificationMode="inter_word"
                 android:layoutDirection="inherit"
                 android:padding="16dp"
                 android:text="@string/text_descripcion_sexual"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textColorHint="#555555"
-                android:justificationMode="inter_word"
                 android:textSize="20sp" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
         </LinearLayout><!--Fin del layout de violencia sexual-->
 
         <View
             android:id="@+id/view7"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
+            android:layout_height="30dp" />
 
         <TextView
             android:id="@+id/label_violencia_economica"
@@ -223,9 +208,8 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_economic"
             android:textAlignment="textEnd"
-            android:textSize="24sp"
             android:textColor="@color/black"
-            />
+            android:textSize="24sp" />
 
         <LinearLayout
             android:id="@+id/layout6"
@@ -236,8 +220,7 @@
 
             <View
                 android:layout_width="80dp"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="match_parent" />
 
             <TextView
                 android:id="@+id/label_descripcion_economica"
@@ -245,21 +228,20 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/degradado_violencia_psicologica"
                 android:fontFamily="sans-serif-black"
+                android:justificationMode="inter_word"
                 android:layoutDirection="inherit"
                 android:padding="16dp"
                 android:text="@string/text_descripcion_economic"
                 android:textAlignment="textEnd"
                 android:textColor="@color/black"
                 android:textColorHint="#555555"
-                android:justificationMode="inter_word"
                 android:textSize="20sp" />
         </LinearLayout> <!--Fin del layout de violencia psicologica-->
 
         <View
             android:id="@+id/view8"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
+            android:layout_height="30dp" />
 
         <TextView
             android:id="@+id/label_violencia_digital"
@@ -268,9 +250,8 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_digital"
             android:textAlignment="textStart"
-            android:textSize="24sp"
             android:textColor="@color/black"
-            />
+            android:textSize="24sp" />
 
         <LinearLayout
             android:id="@+id/layout7"
@@ -283,28 +264,26 @@
                 android:id="@+id/label_descripcion_digital"
                 android:layout_width="400dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/degradado_violencia_sexual"
+                android:background="@drawable/degradado_tipos_violencia"
                 android:fontFamily="sans-serif-black"
+                android:justificationMode="inter_word"
                 android:layoutDirection="inherit"
                 android:padding="16dp"
                 android:text="@string/text_descripcion_digital"
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textColorHint="#555555"
-                android:justificationMode="inter_word"
                 android:textSize="20sp" />
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                />
+                android:layout_height="wrap_content" />
         </LinearLayout><!--Fin del layout de violencia Digital-->
 
         <View
             android:id="@+id/viewSimbolyc"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            />
+            android:layout_height="30dp" />
 
         <TextView
             android:id="@+id/label_violencia_simbolica"
@@ -313,9 +292,8 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_symbolic"
             android:textAlignment="textEnd"
-            android:textSize="24sp"
             android:textColor="@color/black"
-            />
+            android:textSize="24sp" />
 
         <LinearLayout
             android:id="@+id/layoutSymbolic"
@@ -326,37 +304,35 @@
 
             <View
                 android:layout_width="80dp"
-                android:layout_height="match_parent"
-                />
+                android:layout_height="match_parent" />
 
             <TextView
                 android:id="@+id/label_descripcion_simbolica"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/degradado_violencia_psicologica"
+                android:background="@drawable/degradado_violencia_sexual"
                 android:fontFamily="sans-serif-black"
+                android:justificationMode="inter_word"
                 android:layoutDirection="inherit"
                 android:padding="16dp"
                 android:text="@string/text_descripcion_symbolic"
                 android:textAlignment="textEnd"
                 android:textColor="@color/black"
                 android:textColorHint="#555555"
-                android:justificationMode="inter_word"
                 android:textSize="20sp" />
         </LinearLayout> <!--Fin del layout de violencia Simbolica-->
 
         <Button
             android:id="@+id/botonRegresar"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:text="@string/button_back"
-            android:textSize="20sp"
-            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:backgroundTint="@color/rosaPastelMedio"
             android:onClick="back_types_violence"
-            />
+            android:text="@string/button_back"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

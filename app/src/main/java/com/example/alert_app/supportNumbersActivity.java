@@ -1,6 +1,7 @@
 package com.example.alert_app;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -24,4 +25,32 @@ public class supportNumbersActivity extends AppCompatActivity {
         startActivity(i);
         this.finish();
     }
+    public void CJEM(View v) {
+        Uri number = Uri.parse("tel:8712226300");
+        Intent intent = new Intent(Intent.ACTION_DIAL, number);
+    }
+
+    public void IMM(View v) {
+        Uri number = Uri.parse("tel:8715007419");
+        Intent intent = new Intent(Intent.ACTION_DIAL, number);
+    }
+
+    public void support911(View v) {
+        Uri number = Uri.parse("tel:911");
+        Intent intent = new Intent(Intent.ACTION_DIAL, number);
+
+    }
+
+    public void LNCV(View v) {
+        Uri number = Uri.parse("tel:8009112511");
+        Intent intent = new Intent(Intent.ACTION_DIAL, number);
+
+    }
+
+    public void policia(View v) {
+        Uri number = Uri.parse("tel:8717290099");
+        Intent intent = new Intent(Intent.ACTION_DIAL, number);
+
+    }
+
 }
