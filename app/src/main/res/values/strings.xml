@@ -59,7 +59,7 @@
     <string name="text_descripcion_psicologic">Este tipo de violencia se tratan asuntos como Insultos, humillaciones, amenazas, intimidación, celos, control y manipulación emocional. Daña la autoestima y puede hacerte dudar de tu valor o incluso de tu percepción de la realidad.</string>
 
     <string name="text_lab_sexual">Violencia sexual</string>
-    <string name="text_descripcion_sexual">En este tipo de violencia se fuerza a la persona a una persona a tener relaciones sexuales sin consentimineto. Incluye cosas como manoseos, comentarios sexuales no deseados, y la grabación o difusión de contenido íntimo</string>
+    <string name="text_descripcion_sexual">En este tipo de violencia se fuerza a la persona a una persona a tener relaciones sexuales sin consentimineto. Incluye cosas como manoseos, comentarios sexuales no deseados, y la grabación o difusión de contenido íntimo.</string>
 
     <string name="text_lab_economic">Violencia económica</string>
     <string name="text_descripcion_economic">Ocurre cuando alguien controla tu dinero, te impide trabajar, estudiar o acceder a recursos básicos.
@@ -136,13 +136,11 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
     <string name="text_violentometro_2.1">¡Reacciona! ¡No te dejes destruir!</string>
     <string name="text_violentometro_3">URGENTE</string>
     <string name="text_violentometro_3.1">¡Necesitas ayuda profesional!</string>
-    <string name="text_acciones_violentometro">-Bromas Hirientes\n-Chantajear\n-Mentir/Engañar\n-Ignorar, Ley del hielo</string>
-    <string name="text_acciones2_violentometro">-Celar\n-Acechar/Stalkear redes sociales\n-Culpabilizar\n-Descalificar</string>
-    <string name="text_acciones3_violentometro">-Ridiculizar/Ofender\n-Humillar en público\n-Intimidar, amenazar\n-Controlar, prohibir (amistades, familiares, dinero, lugares, apariencia, actividades, celular, mails y redes sociales)</string>
-    <string name="text_acciones4_violentometro">-Destruir articulos personales\n-Manosear\n-Caricias agresivas\n-Golpear "Jugando"</string>
-    <string name="text_acciones5_violentometro">-Pellizcar, arañar\n-Empujar, jalonear\n-Cachetear\n-Patear</string>
-    <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales</string>
-    <string name="text_acciones7_violentometro">-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
+    <string name="text_acciones_violentometro">-Bromas Hirientes\n-Chantajear\n-Mentir/Engañar\n-Ignorar, Ley del hielo\n-Celar\n-Acechar/Stalkear redes sociales\n-Culpabilizar\n-Descalificar</string>
+    <string name="text_acciones3_violentometro">-Ridiculizar/Ofender\n-Humillar en público\n-Intimidar, amenazar\n-Controlar, prohibir (amistades, familiares, dinero, lugares, apariencia, actividades, celular, mails y redes sociales)\n
+    -Destruir articulos personales\n-Manosear\n-Caricias agresivas\n-Golpear "Jugando"\n-Pellizcar, arañar\n-Empujar, jalonear\n-Cachetear\n-Patear</string>
+    <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales\n-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
+
 
     <string name="text_aviso_privacidad">
     Mujer Segura es una herramienta desarrollada para brindar asistencia en situaciones de emergencia.\n

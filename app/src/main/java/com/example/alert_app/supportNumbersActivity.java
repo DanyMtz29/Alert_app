@@ -1,12 +1,16 @@
 package com.example.alert_app;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -25,14 +29,25 @@ public class supportNumbersActivity extends AppCompatActivity {
         startActivity(i);
         this.finish();
     }
-    public void CJEM(View v) {
-        Uri number = Uri.parse("tel:8712226300");
-        Intent intent = new Intent(Intent.ACTION_DIAL, number);
+
+    private void CJEM() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
+            return;
+        }
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:8712226300"));
+        startActivity(intent);
     }
 
-    public void IMM(View v) {
-        Uri number = Uri.parse("tel:8715007419");
-        Intent intent = new Intent(Intent.ACTION_DIAL, number);
+    private void IMM() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
+            return;
+        }
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:8715007419"));
+        startActivity(intent);
     }
 
     public void support911(View v) {
@@ -41,16 +56,26 @@ public class supportNumbersActivity extends AppCompatActivity {
 
     }
 
-    public void LNCV(View v) {
-        Uri number = Uri.parse("tel:8009112511");
-        Intent intent = new Intent(Intent.ACTION_DIAL, number);
-
+    private void LNCV() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
+            return;
+        }
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:8009112511"));
+        startActivity(intent);
     }
 
-    public void policia(View v) {
-        Uri number = Uri.parse("tel:8717290099");
-        Intent intent = new Intent(Intent.ACTION_DIAL, number);
-
+    private void policia() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
+            return;
+        }
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:8717290099"));
+        startActivity(intent);
     }
+
+
 
 }

@@ -1,6 +1,8 @@
 package com.example.alert_app;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -9,6 +11,8 @@ import android.widget.Toast;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 public class centerInformationACtivity extends AppCompatActivity {
 
@@ -28,16 +32,25 @@ public class centerInformationACtivity extends AppCompatActivity {
         );
     }
 
-    public void centro1(View v) {
-        Uri number = Uri.parse("tel:8712226315"); // Número bien formateado
-        Intent intent = new Intent(Intent.ACTION_DIAL, number);
-        launcherLlamada.launch(intent); // Lanza y espera el regreso
+    private void centro1() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
+            return;
+        }
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:8712226315"));
+        startActivity(intent);
     }
 
-    public void centro2(View v) {
-        Uri number = Uri.parse("tel:8715007419"); // Número bien formateado
-        Intent intent = new Intent(Intent.ACTION_DIAL, number);
-        launcherLlamada.launch(intent); // Lanza y espera el regreso
+
+    private void centro2() {
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
+            return;
+        }
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:8715007419"));
+        startActivity(intent);
     }
 
     public void mapa1(View v){

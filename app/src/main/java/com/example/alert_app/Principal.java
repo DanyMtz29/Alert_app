@@ -168,7 +168,7 @@ public class Principal extends AppCompatActivity {
 
     public void llamar911(View v) {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 4);
             return;
         }
         Intent intent = new Intent(Intent.ACTION_CALL);

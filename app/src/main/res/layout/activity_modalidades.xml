@@ -23,9 +23,8 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_modalidades"
             android:textAlignment="center"
-            android:textSize="34sp"
-            android:textColor="@color/azulito"
-            />
+            android:textColor="@color/moradoF"
+            android:textSize="34sp" />
 
         <View
             android:id="@+id/sep1"

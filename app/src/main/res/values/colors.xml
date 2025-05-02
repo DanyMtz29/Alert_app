@@ -26,6 +26,11 @@
     <color name="ALERTA">#B5A3C8</color>
     <color name="URGENTE">#750832</color>
 
+    <color name="CUIDADO_OSCURO">#9FC8BC</color>
+    <color name="ALERTA_OSCURO">#BDB8CE</color>
+    <color name="URGENTE_OSCURO">#840B3B</color>
+
+
 
     <color name="URGENTE1">#750832</color>
 
