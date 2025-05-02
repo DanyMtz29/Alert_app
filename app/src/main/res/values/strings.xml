@@ -2,8 +2,14 @@
     <!--MainActivity-->
     <string name="app_name">Alert_app</string>
     <!--Text-Strings-->
-    <string name="text_name">Nombre completo</string>
+    <string name="text_name">Nombre(s)</string>
+    <string name="text_lastName">Apellidos</string>
     <string name="text_address">Dirección</string>
+    <string name="text_addr_city">Ciudad</string>
+    <string name="text_addr_colony">Colonia</string>
+    <string name="text_addr_street">Calle</string>
+    <string name="text_addr_number">Numero de casa</string>
+    <string name="text_addr_cp">Codigo postal</string>
     <string name="text_phone">Número de telefono celular</string>
     <string name="text_user_information">Información del usuario</string>
     <string name="contact_information">Información de contactos</string>
@@ -13,12 +19,21 @@
 
     <!--Text-Hints-->
     <string name="hint_name">Introduce tu nombre</string>
-    <string name="hint_address">Introduce tu dirección</string>
+    <string name="hint_lastName">Introduce tus apellidos</string>
+    <string name="hint_addr_city">Introduce tu ciudad</string>
+    <string name="hint_addr_colony">Introduce tu colonia</string>
+    <string name="hint_addr_street">Introduce tu calle</string>
+    <string name="hint_addr_number">Introduce tu número</string>
+    <string name="hint_addr_cp">Introduce tu código postal</string>
     <string name="hint_phone">Introduce tu número</string>
 
     <string name="hint_name_contact">Nombre de la persona</string>
+    <string name="hint_lastName_contact">Apellidos de la persona</string>
     <string name="hint_phone_contact">Número de la persona</string>
     <string name="hint_relation_contact">Introduce la relacion con la persona</string>
+
+    <!--Text-ImageButtons-->
+    <string name="text_description_imgProfile">Imagen de perfil</string>
 
     <!--Text-Checkbox-->
     <string name="Terms_conditions">Acepto los terminos y condiciones</string>
@@ -228,8 +243,6 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
 
     Fecha de última actualización: 15 de abril de 2025
 </string>
-
-
 
 
 </resources>
