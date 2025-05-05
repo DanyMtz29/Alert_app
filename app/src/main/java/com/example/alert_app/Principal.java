@@ -23,6 +23,8 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import android.telephony.SmsManager;
 
+import com.example.DataBase.Controller;
+
 public class Principal extends AppCompatActivity {
 
     private FusedLocationProviderClient fusedLocationClient;
