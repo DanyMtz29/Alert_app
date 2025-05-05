@@ -60,25 +60,33 @@ public class getImageUbi {
     }
 
     public static String procesarResultadoImagen(Context context, int requestCode, Uri uriCamara, @Nullable Intent data) {
-        Uri uri = (requestCode == 1) ? uriCamara : data.getData();
-        try {
-            InputStream inputStream = context.getContentResolver().openInputStream(uri);
-            File archivo = new File(context.getFilesDir(), "foto_perfil.jpg");
-            OutputStream outputStream = new FileOutputStream(archivo);
-
-            byte[] buffer = new byte[1024];
-            int len;
-            while ((len = inputStream.read(buffer)) > 0) {
-                outputStream.write(buffer, 0, len);
-            }
-
-            inputStream.close();
-            outputStream.close();
-
-            return archivo.getAbsolutePath();
-        } catch (Exception e) {
-            e.printStackTrace();
+        if (requestCode == 1) { // Cámara
+            // Ya se guardó en archivo, solo devolvemos su ruta
+            return new File(context.getFilesDir(), "foto_perfil.jpg").getAbsolutePath();
         }
+
+        if (data != null && data.getData() != null) { // Galería
+            try {
+                Uri uri = data.getData();
+                InputStream inputStream = context.getContentResolver().openInputStream(uri);
+                File archivo = new File(context.getFilesDir(), "foto_perfil.jpg");
+                OutputStream outputStream = new FileOutputStream(archivo);
+
+                byte[] buffer = new byte[1024];
+                int len;
+                while ((len = inputStream.read(buffer)) > 0) {
+                    outputStream.write(buffer, 0, len);
+                }
+
+                inputStream.close();
+                outputStream.close();
+
+                return archivo.getAbsolutePath();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
         return "";
     }
 

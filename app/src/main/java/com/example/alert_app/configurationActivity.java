@@ -92,7 +92,8 @@ public class configurationActivity extends AppCompatActivity {
                         Intent intent;
                         if (which == 0) {
                             // CAMARA
-                            archivoFotoPerfil = new File(getFilesDir(), "foto_perfil.jpg");
+                            //archivoFotoPerfil = new File(getFilesDir(), "foto_perfil.jpg");
+                            archivoFotoPerfil = new File(getFilesDir(), "foto_temp.jpg");
                             intent = getImageUbi.obtenerIntentCamara(this, archivoFotoPerfil, uriFoto);
                         } else {
                             // GALERIA
@@ -110,10 +111,11 @@ public class configurationActivity extends AppCompatActivity {
                         fotoTemporalBitmap = getImageUbi.obtenerBitmapDesdeResultado(this, currentRequestCode, uriFoto[0], result.getData());
                         if (fotoTemporalBitmap != null) {
                             imgProfile.setImageBitmap(fotoTemporalBitmap);
-                            Toast.makeText(this, "Imagen lista para actualizar. No se ha guardado aún.", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, "Imagen lista, presiona Guardar cambios", Toast.LENGTH_SHORT).show();
                         }
                     }
-                });
+                }
+        );
     }
 
     public void back(View v){
@@ -172,10 +174,17 @@ public class configurationActivity extends AppCompatActivity {
         long[] contactIds = controller.getContactIds(id_user);  // Debes implementarlo
 
         if (fotoTemporalBitmap != null) {
-            File archivo = new File(getFilesDir(), "foto_perfil.jpg");
-            try (FileOutputStream out = new FileOutputStream(archivo)) {
+            File tempFile = new File(getFilesDir(), "foto_temp.jpg");
+            File finalFile = new File(getFilesDir(), "foto_perfil.jpg");
+
+            try (FileOutputStream out = new FileOutputStream(finalFile)) {
                 fotoTemporalBitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
-                imgPath = archivo.getAbsolutePath();
+                imgPath = finalFile.getAbsolutePath();
+
+                // Elimina la temporal si quieres
+                if (tempFile.exists()) {
+                    tempFile.delete();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
                 Toast.makeText(this, "Error al guardar la nueva imagen", Toast.LENGTH_SHORT).show();
