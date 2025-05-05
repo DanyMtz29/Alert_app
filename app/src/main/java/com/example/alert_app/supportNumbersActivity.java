@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,8 +53,15 @@ public class supportNumbersActivity extends AppCompatActivity {
 
     public void support911(View v) {
         Uri number = Uri.parse("tel:911");
-        Intent intent = new Intent(Intent.ACTION_DIAL, number);
-
+        Intent intent = new Intent(Intent.ACTION_CALL, number);
+        Toast.makeText(v.getContext(), "Presionado", Toast.LENGTH_SHORT).show();
+        if (ContextCompat.checkSelfPermission(v.getContext(), Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+            Toast.makeText(v.getContext(), "Entra", Toast.LENGTH_SHORT).show();
+            v.getContext().startActivity(intent);
+        } else {
+            // Aquí podrías pedir el permiso si no está concedido
+            Toast.makeText(v.getContext(), "Permiso para llamadas no concedido", Toast.LENGTH_SHORT).show();
+        }
     }
 
     private void LNCV() {
