@@ -120,4 +120,32 @@ public class Controller {
         context.deleteDatabase("Mujer_Segura_DB"); // Usa el nombre real de tu base
     }
 
+    public long[] getContactIds(long id_user) {
+        Contact contact = new Contact(DB);
+        Cursor cursor = contact.readUserContacts(id_user);
+        long[] ids = {-1, -1};
+
+        if (cursor.moveToFirst()) {
+            ids[0] = cursor.getLong(cursor.getColumnIndexOrThrow(_ID));
+            if (cursor.moveToNext()) {
+                ids[1] = cursor.getLong(cursor.getColumnIndexOrThrow(_ID));
+            }
+        }
+
+        cursor.close();
+        return ids;
+    }
+
+    public long getUserAddressId(long id_user) {
+        User user = new User(DB);
+        Cursor cursor = user.readUser();
+        long id_address = -1;
+
+        if (cursor.moveToFirst()) {
+            id_address = cursor.getLong(cursor.getColumnIndexOrThrow(USER_COL_ADRRESS));
+        }
+
+        cursor.close();
+        return id_address;
+    }
 }

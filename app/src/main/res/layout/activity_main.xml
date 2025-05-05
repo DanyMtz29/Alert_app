@@ -231,7 +231,7 @@
             android:ems="10"
             android:fontFamily="sans-serif-medium"
             android:hint="@string/hint_addr_cp"
-            android:inputType="text"
+            android:inputType="number"
             android:textColor="@color/black"
             android:textSize="20sp" />
 

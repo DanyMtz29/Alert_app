@@ -3,6 +3,7 @@ package com.example.alert_app;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,6 +27,8 @@ import com.example.DataBase.getImageUbi;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int REQUEST_CAMERA = 1;
@@ -48,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
     ActivityResultLauncher<Intent> imageResultLauncher;
 
     CheckBox ckBox;
+    File archivoFotoPerfil;
+    Uri[] uriFoto = new Uri[1]; // Almacena la URI generada con FileProvider
 
     int currentRequestCode = -1;
     @Override
@@ -87,9 +92,16 @@ public class MainActivity extends AppCompatActivity {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Selecciona una opción")
                     .setItems(opciones, (dialog, which) -> {
-                        Intent intent = (which == 0)
-                                ? getImageUbi.obtenerIntentCamara()
-                                : getImageUbi.obtenerIntentGaleria();
+                        Intent intent;
+                        if (which == 0) {
+                            // CAMARA
+                            archivoFotoPerfil = new File(getFilesDir(), "foto_perfil.jpg");
+                            intent = getImageUbi.obtenerIntentCamara(this, archivoFotoPerfil, uriFoto);
+                        } else {
+                            // GALERIA
+                            intent = getImageUbi.obtenerIntentGaleria();
+                        }
+
                         currentRequestCode = (which == 0) ? REQUEST_CAMERA : REQUEST_GALLERY;
                         imageResultLauncher.launch(intent);
                     }).show();
@@ -97,11 +109,11 @@ public class MainActivity extends AppCompatActivity {
         imageResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
-                    if (result.getResultCode() == RESULT_OK && result.getData() != null) {
-                        imgPath = getImageUbi.procesarResultadoImagen(this, currentRequestCode, result.getResultCode(), result.getData());
+                    if (result.getResultCode() == RESULT_OK) {
+                        imgPath = getImageUbi.procesarResultadoImagen(this, currentRequestCode, uriFoto[0], result.getData());
                         if (!imgPath.isEmpty()) {
                             imgProfile.setImageBitmap(BitmapFactory.decodeFile(imgPath));
-                            Toast.makeText(this, "Imagen guardada: " + imgPath, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, "Imagen guardada correctamente", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
@@ -155,6 +167,9 @@ public class MainActivity extends AppCompatActivity {
                     //Para intercalar entre pantalla principal y registro
                     SharedPreferences prefs = getSharedPreferences("registro", MODE_PRIVATE);
                     prefs.edit().putBoolean("yaRegistrado", true).apply();
+                    Intent i = new Intent(this, Principal.class);
+                    startActivity(i);
+                    this.finish();
                 }else
                     Toast.makeText(this, "Error al guardar la alerta", Toast.LENGTH_LONG).show();
             }
