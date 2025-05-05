@@ -31,7 +31,7 @@ public class supportNumbersActivity extends AppCompatActivity {
         this.finish();
     }
 
-    private void CJEM() {
+    public void CJEM(View v) {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
             return;
@@ -41,7 +41,7 @@ public class supportNumbersActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void IMM() {
+    public void IMM(View v) {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
             return;
@@ -54,9 +54,7 @@ public class supportNumbersActivity extends AppCompatActivity {
     public void support911(View v) {
         Uri number = Uri.parse("tel:911");
         Intent intent = new Intent(Intent.ACTION_CALL, number);
-        Toast.makeText(v.getContext(), "Presionado", Toast.LENGTH_SHORT).show();
         if (ContextCompat.checkSelfPermission(v.getContext(), Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
-            Toast.makeText(v.getContext(), "Entra", Toast.LENGTH_SHORT).show();
             v.getContext().startActivity(intent);
         } else {
             // Aquí podrías pedir el permiso si no está concedido
@@ -64,7 +62,7 @@ public class supportNumbersActivity extends AppCompatActivity {
         }
     }
 
-    private void LNCV() {
+    public void LNCV(View v) {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
             return;
@@ -74,7 +72,7 @@ public class supportNumbersActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void policia() {
+    public void policia(View v) {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
             return;

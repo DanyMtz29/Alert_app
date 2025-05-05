@@ -147,6 +147,8 @@ android:fillViewport="true">
             </LinearLayout>
         </LinearLayout>
 
+        <!--Fin del componente policia-->
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -156,7 +158,6 @@ android:fillViewport="true">
             android:text="@string/call_button"
             android:textColor="@color/black"
             android:textSize="18sp" />
-        <!--Fin del componente policia-->
 
         <View
             android:layout_width="match_parent"
