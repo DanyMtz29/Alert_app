@@ -35,7 +35,7 @@
         <TextView
             android:id="@+id/text_modalidades_violencia"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:justificationMode="inter_word"
             android:text="@string/text_modalidades"
             android:textAlignment="textStart"
@@ -84,6 +84,7 @@
             android:padding="10dp"
             android:text="@string/text_mod_familiar"
             android:textSize="18sp"
+            android:textColor="@color/black"
             android:visibility="gone" />
 
         <!--Fin de la etiqueta de modalidad familiar-->
@@ -124,6 +125,7 @@
             android:padding="10dp"
             android:text="@string/text_mod_laboral"
             android:textSize="18sp"
+            android:textColor="@color/black"
             android:visibility="gone" />
 
         <!--Fin de la etiqueta de modalidad familiar-->
@@ -164,6 +166,7 @@
             android:padding="10dp"
             android:text="@string/text_mod_escolar"
             android:textSize="18sp"
+            android:textColor="@color/black"
             android:visibility="gone" />
 
         <!--Fin de la etiqueta de modalidad escolar-->
@@ -204,6 +207,7 @@
             android:padding="10dp"
             android:text="@string/text_mod_comunidad"
             android:textSize="18sp"
+            android:textColor="@color/black"
             android:visibility="gone" />
 
         <!--Fin de la etiqueta de modalidad comunidad-->
@@ -244,6 +248,7 @@
             android:padding="10dp"
             android:text="@string/text_mod_institucional"
             android:textSize="18sp"
+            android:textColor="@color/black"
             android:visibility="gone" />
 
         <!--Fin de la etiqueta de modalidad institucional-->
@@ -282,6 +287,7 @@
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
             android:padding="10dp"
+            android:textColor="@color/black"
             android:text="@string/text_mod_noviazgo"
             android:textSize="18sp"
             android:visibility="gone" />
@@ -292,7 +298,7 @@
         <Button
             android:id="@+id/botonRegresar"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="50dp"
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:text="@string/button_back"

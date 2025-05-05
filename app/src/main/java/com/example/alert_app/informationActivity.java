@@ -60,4 +60,8 @@ public class informationActivity extends AppCompatActivity {
         startActivity(i);
         this.finish();
     }
+
+    public void backInformation(View v){
+        this.finish();
+    }
 }

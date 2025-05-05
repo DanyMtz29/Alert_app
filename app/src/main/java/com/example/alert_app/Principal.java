@@ -82,7 +82,7 @@ public class Principal extends AppCompatActivity {
         });
 
         // 🛡️ Configuramos el botón de alerta
-        botonAlerta = findViewById(R.id.btnAlerta); // Asegúrate que este ID exista en tu layout
+        botonAlerta = findViewById(R.id.btnAlerta);
         configurarBotonAlerta(botonAlerta);
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);

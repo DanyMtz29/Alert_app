@@ -32,7 +32,7 @@ public class centerInformationACtivity extends AppCompatActivity {
         );
     }
 
-    private void centro1() {
+    public void centro1(View v) {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
             return;
@@ -43,7 +43,7 @@ public class centerInformationACtivity extends AppCompatActivity {
     }
 
 
-    private void centro2() {
+    public void centro2(View v) {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CALL_PHONE}, 3);
             return;
