@@ -111,7 +111,6 @@ public class configurationActivity extends AppCompatActivity {
                         fotoTemporalBitmap = getImageUbi.obtenerBitmapDesdeResultado(this, currentRequestCode, uriFoto[0], result.getData());
                         if (fotoTemporalBitmap != null) {
                             imgProfile.setImageBitmap(fotoTemporalBitmap);
-                            Toast.makeText(this, "Imagen lista, presiona Guardar cambios", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }
@@ -141,7 +140,6 @@ public class configurationActivity extends AppCompatActivity {
                 imgProfile.setImageBitmap(BitmapFactory.decodeFile(userData[9]));
             }
         }else{
-            Toast.makeText(this, "NO HAY DATOS", Toast.LENGTH_SHORT).show();
             SharedPreferences prefs = getSharedPreferences("registro", MODE_PRIVATE);
             prefs.edit().putBoolean("yaRegistrado", false).apply();
             return;

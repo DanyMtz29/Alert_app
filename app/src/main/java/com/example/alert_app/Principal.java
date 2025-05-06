@@ -50,7 +50,7 @@ public class Principal extends AppCompatActivity {
     private FusedLocationProviderClient fusedLocationClient;
     private Handler handler = new Handler();
     private boolean isLongPress = false;
-    private Button botonAlerta; // Tu botón de alerta
+    private Button botonAlerta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,31 +70,24 @@ public class Principal extends AppCompatActivity {
                     public boolean onMenuItemClick(MenuItem item) {
                         int id = item.getItemId();
                         if (id == R.id.menu_informacion) {
-                            Toast.makeText(Principal.this, "Información seleccionada", Toast.LENGTH_SHORT).show();
                             i = new Intent(Principal.this, informationActivity.class);
                             startActivity(i);
                         } else if (id == R.id.menu_configuracion) {
-                            Toast.makeText(Principal.this, "Configuración seleccionada", Toast.LENGTH_SHORT).show();
                             i = new Intent(Principal.this, configurationActivity.class);
                             startActivity(i);
                         } else if (id == R.id.menu_alertas_emitidas) {
-                            Toast.makeText(Principal.this, "Alertas Emitidas seleccionadas", Toast.LENGTH_SHORT).show();
                             i = new Intent(Principal.this, Activity_Alerts.class);
                             startActivity(i);
                         } else if (id == R.id.menu_tomar_foto) {
-                            Toast.makeText(Principal.this, "Tomar Foto seleccionada", Toast.LENGTH_SHORT).show();
-                            archivoFotoAlerta = new File(getFilesDir(), "foto_alerta.jpg"); // <-- FINAL
-                            Log.d("FOTOooooooooooo","RUTA o archivo: "+archivoFotoAlerta.toString());
+                            archivoFotoAlerta = new File(getFilesDir(), "foto_alerta.jpg");
 
                             Intent intent = getImageUbi.obtenerIntentCamara(Principal.this, archivoFotoAlerta, uriFoto);
                             currentRequestCode = REQUEST_CAMERA;
                             imageResultLauncher.launch(intent);
                         } else if (id == R.id.menu_terminos) {
-                            Toast.makeText(Principal.this, "Términos y Condiciones seleccionados", Toast.LENGTH_SHORT).show();
                             i = new Intent(Principal.this, termsConditionsActivity.class);
                             startActivity(i);
                         } else if (id == R.id.menu_aviso_privacidad) {
-                            Toast.makeText(Principal.this, "Aviso de Privacidad seleccionado", Toast.LENGTH_SHORT).show();
                             i = new Intent(Principal.this, privacyNoticeActivity.class);
                             startActivity(i);
                         } else {
@@ -115,19 +108,14 @@ public class Principal extends AppCompatActivity {
                 new ActivityResultContracts.StartActivityForResult(),
                 result -> {
                     if (result.getResultCode() == RESULT_OK) {
-                        Log.d("RUTA_ALERTA", "ENTRAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
                         fotoTemporalBitmap = getImageUbi.obtenerBitmapDesdeResultado(this, currentRequestCode, uriFoto[0], result.getData());
                         if (fotoTemporalBitmap != null) {
                             try (FileOutputStream out = new FileOutputStream(archivoFotoAlerta)) {
                                 fotoTemporalBitmap.compress(Bitmap.CompressFormat.JPEG, 100, out);
                                 rutaFoto = archivoFotoAlerta.getAbsolutePath();
-                                Log.d("RUTA_ALERTA", "Foto guardada ennnnnnnnnnnnnnnnn: " + rutaFoto);
                             } catch (Exception e) {
                                 e.printStackTrace();
-                                Log.e("FileUtils", "Error al guardar la imagen: " + e.getMessage());
                             }
-                        } else {
-                            Log.d("RUTA_ALERTA", "La imagen es nula. ELSEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
                         }
                     }
                 }
@@ -185,13 +173,9 @@ public class Principal extends AppCompatActivity {
                         controller.insertAlert(1, lat, lon, rutaFoto); // usa la ruta actual
                         fotoAlertaBitmap = null; // Limpia para evitar duplicados
 
-                        Toast.makeText(Principal.this, mensaje, Toast.LENGTH_LONG).show();
-
                         latGuardada = lat;
                         lonGuardada = lon;
                         idUserGuardado = 1;
-
-                        Log.d("RUTA_ALERTA", "Foto guardada en: " + rutaFoto);
 
                         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED) {
                             enviarMensajesEmergencia(idUserGuardado, latGuardada, lonGuardada);

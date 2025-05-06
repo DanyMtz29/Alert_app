@@ -521,15 +521,6 @@
             android:textSize="28sp"
             android:onClick="register"/>
 
-        <Button
-            android:id="@+id/buttonRead"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
-            android:text="Leer"
-            android:textSize="28sp"
-            android:onClick="leerDatos"/>
-
     </LinearLayout>
 
 </ScrollView>

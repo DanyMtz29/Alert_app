@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
                         fotoTemporalBitmap = getImageUbi.obtenerBitmapDesdeResultado(this, currentRequestCode, uriFoto[0], result.getData());
                         if (fotoTemporalBitmap != null) {
                             imgProfile.setImageBitmap(fotoTemporalBitmap);
-                            Toast.makeText(this, "Imagen lista para guardar", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
