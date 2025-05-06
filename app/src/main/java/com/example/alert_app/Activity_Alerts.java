@@ -41,7 +41,7 @@ public class Activity_Alerts extends AppCompatActivity {
             listaAlertas.add(new Alerta(fecha, ubicacion, foto));
         }
 
-        adapter = new AlertaAdapter(this,listaAlertas);
+        adapter = new AlertaAdapter(listaAlertas,this);
         recyclerView.setAdapter(adapter);
     }
 }

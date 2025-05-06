@@ -1,6 +1,7 @@
 package com.example.alert_app;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,16 +13,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.File;
-import java.util.List;
+import java.util.ArrayList;
 
 public class AlertaAdapter extends RecyclerView.Adapter<AlertaAdapter.AlertaViewHolder> {
 
+    private ArrayList<Alerta> listaAlertas;
     private Context context;
-    private List<Alerta> listaAlertas;
 
-    public AlertaAdapter(Context context, List<Alerta> listaAlertas) {
-        this.context = context;
+    public AlertaAdapter(ArrayList<Alerta> listaAlertas, Context context) {
         this.listaAlertas = listaAlertas;
+        this.context = context;
     }
 
     @NonNull
@@ -34,19 +35,20 @@ public class AlertaAdapter extends RecyclerView.Adapter<AlertaAdapter.AlertaView
     @Override
     public void onBindViewHolder(@NonNull AlertaViewHolder holder, int position) {
         Alerta alerta = listaAlertas.get(position);
-        holder.txtFecha.setText("Fecha: " + alerta.getFecha());
-        holder.txtUbicacion.setText("Ubicación: " + alerta.getUbicacion());
+        holder.txtFecha.setText(alerta.getFecha());
+        holder.txtUbicacion.setText(alerta.getUbicacion());
 
-        // Si hay una ruta de foto válida
+        // 📸 Cargar imagen si existe
         if (alerta.getRutaFoto() != null && !alerta.getRutaFoto().isEmpty()) {
             File imgFile = new File(alerta.getRutaFoto());
             if (imgFile.exists()) {
-                holder.imgFoto.setImageBitmap(BitmapFactory.decodeFile(imgFile.getAbsolutePath()));
+                Bitmap bitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+                holder.imgFoto.setImageBitmap(bitmap);
             } else {
-                holder.imgFoto.setImageResource(R.drawable.sin_foto);
+                holder.imgFoto.setImageResource(R.drawable.sin_foto); // fallback
             }
         } else {
-            holder.imgFoto.setImageResource(R.drawable.sin_foto);
+            holder.imgFoto.setImageResource(R.drawable.sin_foto); // fallback si no hay foto
         }
     }
 

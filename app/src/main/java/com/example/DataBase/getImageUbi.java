@@ -92,7 +92,8 @@ public class getImageUbi {
 
     public static Bitmap obtenerBitmapDesdeResultado(Context context, int requestCode, Uri uriCamara, @Nullable Intent data) {
         try {
-            Uri uri = (requestCode == 1) ? uriCamara : data.getData();
+            //Uri uri = (requestCode == 1) ? uriCamara : data.getData();
+            Uri uri = (requestCode == 1 || data == null) ? uriCamara : data.getData();
             InputStream inputStream = context.getContentResolver().openInputStream(uri);
             return BitmapFactory.decodeStream(inputStream);
         } catch (Exception e) {
