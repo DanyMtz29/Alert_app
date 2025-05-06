@@ -505,6 +505,7 @@
             android:fontFamily="sans-serif-medium"
             android:text="@string/Terms_conditions"
             android:textColor="@color/black"
+            android:onClick="terms"
             android:textSize="20sp" />
 
         <View

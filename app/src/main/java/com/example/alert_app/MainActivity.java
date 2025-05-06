@@ -197,4 +197,24 @@ public class MainActivity extends AppCompatActivity {
                 bxC2Number.getText().toString().isEmpty() ||
                 bxC2Relation.getText().toString().isEmpty();
     }
+
+    public void terms(View v){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Términos y Condiciones");
+        builder.setMessage(getString(R.string.text_terminos_condiciones));
+
+        builder.setPositiveButton("Aceptar", (dialog, which) -> {
+            CheckBox cb = (CheckBox) v;
+            cb.setChecked(true); // Si el usuario acepta, marcamos la casilla
+        });
+
+        builder.setNegativeButton("Cancelar", (dialog, which) -> {
+            CheckBox cb = (CheckBox) v;
+            cb.setChecked(false); // Si cancela, la desmarcamos
+            dialog.dismiss();
+        });
+
+        builder.show();
+    }
+
 }

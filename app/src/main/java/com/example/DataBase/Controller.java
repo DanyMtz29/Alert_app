@@ -140,19 +140,6 @@ public class Controller {
         return ids;
     }
 
-    public long getUserAddressId(long id_user) {
-        User user = new User(DB);
-        Cursor cursor = user.readUser();
-        long id_address = -1;
-
-        if (cursor.moveToFirst()) {
-            id_address = cursor.getLong(cursor.getColumnIndexOrThrow(USER_COL_ADRRESS));
-        }
-
-        cursor.close();
-        return id_address;
-    }
-
     public ArrayList<Alerta> readAllAlerts(long id_user) {
         Alert alert = new Alert(DB);
         Cursor cursor = alert.readAllAlerts(id_user);

@@ -232,6 +232,7 @@ public class configurationActivity extends AppCompatActivity {
 
         if (resUser > 0 && resAddress > 0 && resC1 > 0 && resC2 > 0) {
             Toast.makeText(this, "Datos actualizados correctamente", Toast.LENGTH_SHORT).show();
+            this.finish();
         } else {
             Toast.makeText(this, "Error al actualizar algunos datos", Toast.LENGTH_SHORT).show();
         }
