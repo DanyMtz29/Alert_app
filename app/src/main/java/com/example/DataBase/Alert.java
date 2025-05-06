@@ -54,4 +54,19 @@ public class Alert {
         return sqlite.update(ALERT_TABLE, values, _ID + " = ?", new String[]{String.valueOf(alertId)});
     }
 
+    public Cursor readAllAlerts(long userId) {
+        SQLiteDatabase sqlite = DB.getReadableDatabase();
+
+        String query = "SELECT " +
+                ALERT_COL_LAT + ", " +
+                ALERT_COL_LON + ", " +
+                ALERT_COL_CREATED + ", " +
+                ALERT_COL_PHOTO +
+                " FROM " + ALERT_TABLE +
+                " WHERE " + ALERT_COL_ID_USER + " = ?" +
+                " ORDER BY " + ALERT_COL_CREATED + " DESC"; // Opcional: más recientes primero
+
+        String[] args = {String.valueOf(userId)};
+        return sqlite.rawQuery(query, args);
+    }
 }

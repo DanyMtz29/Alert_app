@@ -5,7 +5,11 @@ import static com.example.DataBase.Table.*;
 
 import android.content.Context;
 import android.database.Cursor;
+
+import com.example.alert_app.Alerta;
+
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
@@ -147,5 +151,31 @@ public class Controller {
 
         cursor.close();
         return id_address;
+    }
+
+    public ArrayList<Alerta> readAllAlerts(long id_user) {
+        Alert alert = new Alert(DB);
+        Cursor cursor = alert.readAllAlerts(id_user);
+        ArrayList<Alerta> lista = new ArrayList<>();
+
+        if (cursor.moveToFirst()) {
+            do {
+                double lat = cursor.getDouble(cursor.getColumnIndexOrThrow(ALERT_COL_LAT));
+                double lon = cursor.getDouble(cursor.getColumnIndexOrThrow(ALERT_COL_LON));
+                String createdAtStr = cursor.getString(cursor.getColumnIndexOrThrow(ALERT_COL_CREATED));
+                String photoPath = cursor.getString(cursor.getColumnIndexOrThrow(ALERT_COL_PHOTO));
+
+                long millis = Long.parseLong(createdAtStr);
+                Date date = new Date(millis);
+
+                String ubicacion = "https://maps.google.com/?q=" + lat + "," + lon;
+                String fecha = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(date);
+                Alerta a = new Alerta(fecha, ubicacion, photoPath);
+                lista.add(a);
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        return lista;
     }
 }

@@ -1,6 +1,7 @@
 package com.example.alert_app;
 
 import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -27,6 +28,9 @@ import com.example.DataBase.Controller;
 
 public class Principal extends AppCompatActivity {
 
+    private static final int REQUEST_SMS_PERMISSION = 200;
+    private double latGuardada, lonGuardada;
+    private long idUserGuardado;
     private FusedLocationProviderClient fusedLocationClient;
     private Handler handler = new Handler();
     private boolean isLongPress = false;
@@ -59,6 +63,8 @@ public class Principal extends AppCompatActivity {
                             startActivity(i);
                         } else if (id == R.id.menu_alertas_emitidas) {
                             Toast.makeText(Principal.this, "Alertas Emitidas seleccionadas", Toast.LENGTH_SHORT).show();
+                            i = new Intent(Principal.this, Activity_Alerts.class);
+                            startActivity(i);
                         } else if (id == R.id.menu_tomar_foto) {
                             Toast.makeText(Principal.this, "Tomar Foto seleccionada", Toast.LENGTH_SHORT).show();
                             i = new Intent("android.media.action.IMAGE_CAPTURE");
@@ -131,10 +137,20 @@ public class Principal extends AppCompatActivity {
                         String mensaje = "EMERGENCIA \nUbicación aproximada:\nLat: " + lat + "\nLon: " + lon;
                         llamarSeguridadPublica();
 
-                        //simulacion
+                        Controller controller = new Controller(Principal.this);
+                        controller.insertAlert(1, lat, lon, null); // id_user = 1, sin foto
+
                         Toast.makeText(Principal.this, mensaje, Toast.LENGTH_LONG).show();
 
-                        // mandar SMS real:
+                        latGuardada = lat;
+                        lonGuardada = lon;
+                        idUserGuardado = 1;
+
+                        if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED) {
+                            enviarMensajesEmergencia(idUserGuardado, latGuardada, lonGuardada);
+                        } else {
+                            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS}, REQUEST_SMS_PERMISSION);
+                        }
                     } else {
                         Toast.makeText(Principal.this, "No se pudo obtener ubicación", Toast.LENGTH_SHORT).show();
                     }
@@ -177,6 +193,48 @@ public class Principal extends AppCompatActivity {
         intent.setData(Uri.parse("tel:911"));
         startActivity(intent);
 
+    }
+
+    public void enviarMensajesEmergencia( long id_user, double latitud, double longitud) {
+        Controller controller = new Controller(this);
+        String[] contactos = controller.readContact(id_user);
+        contactos[2] = "8711285626";
+
+        // Verifica si hay números válidos
+        if (contactos == null || contactos.length < 7 || /*contactos[2] == null ||*/ contactos[6] == null) {
+            Toast.makeText(this, "No se encontraron contactos válidos", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        // Ubicación con link de Google Maps
+        String ubicacion = "https://maps.google.com/?q=" + latitud + "," + longitud;
+
+        // Mensaje de alerta
+        String m1 = "¡Alerta de emergencia! Me encuentro en peligro.";
+        String m2 = " Por favor, comunícate conmigo o llama al 911.";
+        String m3 = "Esta es mi ubicación: ";
+
+        // Enviar SMS a ambos contactos
+        SmsManager smsManager = SmsManager.getDefault();
+        smsManager.sendTextMessage(contactos[2], null, m1, null, null);
+        smsManager.sendTextMessage(contactos[2], null, m2, null, null);
+        smsManager.sendTextMessage(contactos[2], null, m3, null, null);
+        smsManager.sendTextMessage(contactos[2], null, ubicacion, null, null);
+        //smsManager.sendTextMessage(contactos[6], null, mensaje, null, null);
+
+        Toast.makeText(this, "Mensajes enviados a contactos de emergencia", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == REQUEST_SMS_PERMISSION) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                enviarMensajesEmergencia(idUserGuardado, latGuardada, lonGuardada);
+            } else {
+                Toast.makeText(this, "Permiso para enviar SMS denegado", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
 }

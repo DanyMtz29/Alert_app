@@ -244,6 +244,10 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
 
     Fecha de última actualización: 15 de abril de 2025
 </string>
-
+    <!--Alertas emitidas-->
+    <string name="text_Alerts">Alertas emitidas</string>
+    <string name="text_ubication">Ubicación: </string>
+    <string name="text_Date">Fecha de emisión</string>
+    <string name="text_photo_Alert">Foto de la situación</string>
 
 </resources>
