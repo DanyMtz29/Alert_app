@@ -11,9 +11,11 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/lavanda"
         android:orientation="vertical"
-        tools:context=".centerInformationACtivity"
-        android:background="@color/lavanda">
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context=".centerInformationACtivity">
 
         <TextView
             android:id="@+id/textView4"
@@ -23,25 +25,24 @@
             android:fontFamily="sans-serif-black"
             android:text="@string/text_lab_Centros_informacion"
             android:textAlignment="center"
-            android:textSize="34sp"
-            android:textColor="@color/azulito"
-            />
+            android:textColor="@color/moradoF"
+            android:textSize="34sp" />
 
         <View
             android:id="@+id/viewCentros1"
             android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            android:layout_height="30dp" />
 
         <ImageView
             android:id="@+id/imgJusticia"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/centro_justicia_mujeres"/>
+            android:src="@drawable/centro_justicia_mujeres" />
 
         <View
             android:id="@+id/viewCentros2"
             android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+            android:layout_height="10dp" />
 
         <TextView
             android:id="@+id/text_lab_centro_justica"
@@ -52,10 +53,11 @@
             android:text="@string/text_tit_centro_justicia"
             android:textColor="@color/black"
             android:textSize="20sp" />
+
         <View
             android:id="@+id/viewCentros3"
             android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+            android:layout_height="10dp" />
 
         <!--Inicio del layout de direccion-->
         <LinearLayout
@@ -63,9 +65,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
+            android:gravity="top"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:gravity="top"
             tools:context=".TiposViolencia">
 
             <ImageView
@@ -95,8 +97,8 @@
                     android:id="@+id/text_direccion_Centro"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/text_dir_centro_justica"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
@@ -108,9 +110,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
+            android:gravity="top"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:gravity="top"
             tools:context=".TiposViolencia">
 
             <ImageView
@@ -140,32 +142,33 @@
                     android:id="@+id/text_tel1_CentroJust"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/text_tel_centro1_justicia"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
+
                 <TextView
                     android:id="@+id/text_tel2_CentroJust1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/text_tel2_centro_justicia"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
             </LinearLayout><!--Fin del layout de telefonos-->
 
-    </LinearLayout>
+        </LinearLayout>
         <!--Inicio del layout de horario de atencion-->
         <LinearLayout
             android:id="@+id/lay3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
+            android:gravity="top"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:gravity="top"
             tools:context=".TiposViolencia">
 
             <ImageView
@@ -194,8 +197,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/text_horario_centro_justicia"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
@@ -212,17 +215,19 @@
                 android:id="@+id/btn_call_cjm"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
+                android:layout_marginRight="20dp"
                 android:backgroundTint="@color/lilaPastelOscuro"
+                android:onClick="centro1"
                 android:text="@string/call_button"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginRight="20dp"/>
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_viewMap_cjm"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/lilaPastelOscuro"
+                android:onClick="mapa1"
                 android:text="@string/view_map"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -230,16 +235,16 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="30dp"/>
+            android:layout_height="30dp" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/img_instituto_muj"/>
+            android:src="@drawable/img_instituto_muj" />
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+            android:layout_height="10dp" />
 
         <TextView
             android:layout_width="match_parent"
@@ -249,18 +254,19 @@
             android:text="@string/text_tit_ins_mujer"
             android:textColor="@color/black"
             android:textSize="20sp" />
+
         <View
             android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+            android:layout_height="10dp" />
 
         <!--Inicio del layout de direccion-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
+            android:gravity="top"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:gravity="top"
             tools:context=".TiposViolencia">
 
             <ImageView
@@ -287,8 +293,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/text_dir_ins_mujer"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
@@ -299,9 +305,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
+            android:gravity="top"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:gravity="top"
             tools:context=".TiposViolencia">
 
             <ImageView
@@ -328,8 +334,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/text_tel_ins_mujer"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
@@ -341,9 +347,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
+            android:gravity="top"
             android:orientation="horizontal"
             android:padding="8dp"
-            android:gravity="top"
             tools:context=".TiposViolencia">
 
             <ImageView
@@ -370,8 +376,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/text_hor_ins_mujer"
                     android:textColor="@color/black"
                     android:textSize="16sp" />
@@ -388,17 +394,19 @@
                 android:id="@+id/btn_call_instituto"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
+                android:layout_marginRight="20dp"
                 android:backgroundTint="@color/lilaPastelOscuro"
+                android:onClick="centro2"
                 android:text="@string/call_button"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                android:layout_marginRight="20dp"/>
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btn_viewMap_instituto"
                 android:layout_width="150dp"
                 android:layout_height="50dp"
                 android:backgroundTint="@color/lilaPastelOscuro"
+                android:onClick="mapa2"
                 android:text="@string/view_map"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
@@ -406,16 +414,15 @@
 
         <Button
             android:id="@+id/botonRegresar"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
             android:layout_width="180dp"
             android:layout_height="50dp"
-            android:text="@string/button_back"
-            android:textSize="20sp"
-            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:backgroundTint="@color/lilaPastelMedio"
             android:onClick="backCenter"
-            />
+            android:text="@string/button_back"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </ScrollView>

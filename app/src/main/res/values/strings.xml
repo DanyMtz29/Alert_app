@@ -1,9 +1,15 @@
 <resources>
     <!--MainActivity-->
-    <string name="app_name">Alert_app</string>
+    <string name="app_name">Mujer Segura</string>
     <!--Text-Strings-->
-    <string name="text_name">Nombre completo</string>
+    <string name="text_name">Nombre(s)</string>
+    <string name="text_lastName">Apellidos</string>
     <string name="text_address">Dirección</string>
+    <string name="text_addr_city">Ciudad</string>
+    <string name="text_addr_colony">Colonia</string>
+    <string name="text_addr_street">Calle</string>
+    <string name="text_addr_number">Numero de casa</string>
+    <string name="text_addr_cp">Codigo postal</string>
     <string name="text_phone">Número de telefono celular</string>
     <string name="text_user_information">Información del usuario</string>
     <string name="contact_information">Información de contactos</string>
@@ -13,12 +19,21 @@
 
     <!--Text-Hints-->
     <string name="hint_name">Introduce tu nombre</string>
-    <string name="hint_address">Introduce tu dirección</string>
+    <string name="hint_lastName">Introduce tus apellidos</string>
+    <string name="hint_addr_city">Introduce tu ciudad</string>
+    <string name="hint_addr_colony">Introduce tu colonia</string>
+    <string name="hint_addr_street">Introduce tu calle</string>
+    <string name="hint_addr_number">Introduce tu número</string>
+    <string name="hint_addr_cp">Introduce tu código postal</string>
     <string name="hint_phone">Introduce tu número</string>
 
     <string name="hint_name_contact">Nombre de la persona</string>
+    <string name="hint_lastName_contact">Apellidos de la persona</string>
     <string name="hint_phone_contact">Número de la persona</string>
     <string name="hint_relation_contact">Introduce la relacion con la persona</string>
+
+    <!--Text-ImageButtons-->
+    <string name="text_description_imgProfile">Imagen de perfil</string>
 
     <!--Text-Checkbox-->
     <string name="Terms_conditions">Acepto los terminos y condiciones</string>
@@ -59,7 +74,7 @@
     <string name="text_descripcion_psicologic">Este tipo de violencia se tratan asuntos como Insultos, humillaciones, amenazas, intimidación, celos, control y manipulación emocional. Daña la autoestima y puede hacerte dudar de tu valor o incluso de tu percepción de la realidad.</string>
 
     <string name="text_lab_sexual">Violencia sexual</string>
-    <string name="text_descripcion_sexual">En este tipo de violencia se fuerza a la persona a una persona a tener relaciones sexuales sin consentimineto. Incluye cosas como manoseos, comentarios sexuales no deseados, y la grabación o difusión de contenido íntimo</string>
+    <string name="text_descripcion_sexual">En este tipo de violencia se fuerza a la persona a una persona a tener relaciones sexuales sin consentimineto. Incluye cosas como manoseos, comentarios sexuales no deseados, y la grabación o difusión de contenido íntimo.</string>
 
     <string name="text_lab_economic">Violencia económica</string>
     <string name="text_descripcion_economic">Ocurre cuando alguien controla tu dinero, te impide trabajar, estudiar o acceder a recursos básicos.
@@ -130,16 +145,17 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
 
     <!--Activity violentometro-->
     <string name="text_violentometro">Violentómetro</string>
-    <string name="text_violentometro_1">¡Ten cuidado!. ¡La violencia aumentará!</string>
-    <string name="text_violentometro_2">¡Reacciona!. ¡No te dejes destruir!</string>
-    <string name="text_violentometro_3">¡Necesitas ayuda profesional!</string>
-    <string name="text_acciones_violentometro">-Bromas Hirientes\n-Chantajear\n-Mentir/Engañar\n-Ignorar, Ley del hielo</string>
-    <string name="text_acciones2_violentometro">-Celar\n-Acechar/Stalkear redes sociales\n-Culpabilizar\n-Descalificar</string>
-    <string name="text_acciones3_violentometro">-Ridiculizar/Ofender\n-Humillar en público\n-Intimidar, amenazar\n-Controlar, prohibir (amistades, familiares, dinero, lugares, apariencia, actividades, celular, mails y redes sociales)</string>
-    <string name="text_acciones4_violentometro">-Destruir articulos personales\n-Manosear\n-Caricias agresivas\n-Golpear "Jugando"</string>
-    <string name="text_acciones5_violentometro">-Pellizcar, arañar\n-Empujar, jalonear\n-Cachetear\n-Patear</string>
-    <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales</string>
-    <string name="text_acciones7_violentometro">-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
+    <string name="text_violentometro_1">CUIDADO</string>
+    <string name="text_violentometro_1.1">La violencia aumentará</string>
+    <string name="text_violentometro_2">ALERTA</string>
+    <string name="text_violentometro_2.1">¡Reacciona! ¡No te dejes destruir!</string>
+    <string name="text_violentometro_3">URGENTE</string>
+    <string name="text_violentometro_3.1">¡Necesitas ayuda profesional!</string>
+    <string name="text_acciones_violentometro">-Bromas Hirientes\n-Chantajear\n-Mentir/Engañar\n-Ignorar, Ley del hielo\n-Celar\n-Acechar/Stalkear redes sociales\n-Culpabilizar\n-Descalificar</string>
+    <string name="text_acciones3_violentometro">-Ridiculizar/Ofender\n-Humillar en público\n-Intimidar, amenazar\n-Controlar, prohibir (amistades, familiares, dinero, lugares, apariencia, actividades, celular, mails y redes sociales)\n
+    -Destruir articulos personales\n-Manosear\n-Caricias agresivas\n-Golpear "Jugando"\n-Pellizcar, arañar\n-Empujar, jalonear\n-Cachetear\n-Patear</string>
+    <string name="text_acciones6_violentometro">-Encerrar, aislar\n-Sextorsión\n-Amenazar con objetos o armas\n-Difundir contenido íntimo sin consentimiento por medios digitales\n-Amenazar de muerte\n-Forzar a relación sexual\n-Abuso sexual\n-Violar\n-Mutilar\n-ASESINAR (Homicidio/Feminicidio)</string>
+
 
     <string name="text_aviso_privacidad">
     Mujer Segura es una herramienta desarrollada para brindar asistencia en situaciones de emergencia.\n
@@ -228,8 +244,10 @@ Suele estar presente en medios, chistes, publicidad o normas culturales que norm
 
     Fecha de última actualización: 15 de abril de 2025
 </string>
-
-
-
+    <!--Alertas emitidas-->
+    <string name="text_Alerts">Alertas emitidas</string>
+    <string name="text_ubication">Ubicación: </string>
+    <string name="text_Date">Fecha de emisión</string>
+    <string name="text_photo_Alert">Foto de la situación</string>
 
 </resources>

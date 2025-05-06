@@ -19,8 +19,6 @@ public class termsConditionsActivity extends AppCompatActivity {
     }
 
     public void backTermsConditions(View v){
-        Intent i = new Intent(termsConditionsActivity.this, Principal.class);
-        startActivity(i);
         this.finish();
     }
 }

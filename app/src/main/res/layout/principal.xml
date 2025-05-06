@@ -1,163 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lavanda"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
+    <!-- Espaciado superior -->
     <View
-        android:id="@+id/view9"
         android:layout_width="match_parent"
         android:layout_height="20dp" />
 
+    <!-- Encabezado -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="14dp"
-            android:layout_height="60sp"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
             app:srcCompat="@drawable/alerta2" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/anton"
-            android:text=" MujerSegura"
+            android:gravity="center"
+            android:text="  MujerSegura"
+            android:textAlignment="textStart"
             android:textColor="@color/moradoF"
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <View
-            android:id="@+id/view23"
-            android:layout_width="10dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
         <ImageButton
             android:id="@+id/imageButton3"
-            android:layout_width="40dp"
-            android:layout_height="60sp"
-            android:layout_weight="1"
+            android:layout_width="63dp"
+            android:layout_height="match_parent"
             android:backgroundTint="@color/lavanda"
-            android:contentDescription="Menu desplegable"
-            android:scaleType="fitCenter"
+            android:contentDescription="Menú"
+            android:scaleType="centerCrop"
             app:srcCompat="@drawable/menu" />
-
     </LinearLayout>
 
-    <View
-        android:id="@+id/view12"
+    <!-- Espacio flexible arriba del botón ALERTA -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1" />
 
+    <!-- Botón ALERTA central -->
+    <Button
+        android:id="@+id/btnAlerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/rosaa"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:minWidth="200dp"
+        android:minHeight="200dp"
+        android:padding="16dp"
+        android:text="ALERTA"
+        android:textColor="@color/lavanda"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:cornerRadius="150dp" />
+
+    <!-- Espacio flexible abajo del botón ALERTA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Botones inferiores -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <View
-            android:id="@+id/view25"
-            android:layout_width="75dp"
-            android:layout_height="250dp"
-            android:layout_weight="1" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/rosaa"
-            android:fontFamily="sans-serif-black"
-            android:text="ALERTA"
-            android:textColor="@color/lavanda"
-            android:textSize="48sp"
-            android:textStyle="bold"
-            app:cornerRadius="300dp" />
-
-        <View
-            android:id="@+id/view24"
-            android:layout_width="75dp"
-            android:layout_height="250dp"
-            android:layout_weight="1" />
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view15"
-        android:layout_width="match_parent"
-        android:layout_height="100dp" />
-
-    <!-- Sección inferior: Botón de Protección Pública y Botón 911 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <!-- Botón de Protección Pública (Escudo) -->
+        <!-- Protección Pública -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButtonEscudo"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
+                android:id="@+id/btnSegPub"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:background="@drawable/circular_button_background"
-                android:contentDescription="Llamada a seguridad pública"
+                android:contentDescription="Llamar seguridad pública"
+                android:onClick="llamarSeguridadPublica"
                 android:scaleType="centerInside"
                 android:src="@drawable/segmorado" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="4dp"
-                android:text="Protección Pública"
+                android:layout_marginTop="4dp"
+                android:text="Seguridad Pública"
                 android:textColor="@color/moradoF"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <!-- Botón 911 -->
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button9"
-                android:layout_width="110dp"
-                android:layout_height="110dp"
+                android:id="@+id/btn911"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:backgroundTint="@color/lila"
-                android:fontFamily="sans-serif-medium"
+                android:onClick="llamar911"
                 android:text="911"
                 android:textColor="@color/moradoF"
-                android:textSize="34sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                app:cornerRadius="300dp" />  <!-- 80dp/2 = 40dp para círculo -->
+                app:cornerRadius="150dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="4dp"
+                android:layout_marginTop="4dp"
                 android:text="Llamar al 911"
                 android:textColor="@color/moradoF"
-                android:textSize="20sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
+
+    <!-- Espacio inferior opcional -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
 </LinearLayout>

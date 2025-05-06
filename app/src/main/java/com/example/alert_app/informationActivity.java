@@ -54,4 +54,14 @@ public class informationActivity extends AppCompatActivity {
         startActivity(i);
         this.finish();
     }
+
+    public void backCenter(View v){
+        Intent i = new Intent(this, informationActivity.class);
+        startActivity(i);
+        this.finish();
+    }
+
+    public void backInformation(View v){
+        this.finish();
+    }
 }

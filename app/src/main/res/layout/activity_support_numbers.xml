@@ -13,6 +13,8 @@ android:fillViewport="true">
         android:background="@color/lavanda"
         android:gravity="center_horizontal"
         android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         tools:context=".supportNumbersActivity">
 
         <TextView
@@ -22,8 +24,9 @@ android:fillViewport="true">
             android:fontFamily="sans-serif-black"
             android:text="@string/text_support_numbers"
             android:textAlignment="center"
-            android:textColor="@color/azulito"
-            android:textSize="34sp" />
+            android:textColor="@color/moradoF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <View
             android:layout_width="match_parent"
@@ -78,11 +81,13 @@ android:fillViewport="true">
 
             </LinearLayout>
         </LinearLayout>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/lilaPastelOscuro"
+            android:onClick="support911"
             android:text="@string/call_button"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -100,6 +105,7 @@ android:fillViewport="true">
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,15 +146,18 @@ android:fillViewport="true">
 
             </LinearLayout>
         </LinearLayout>
+
+        <!--Fin del componente policia-->
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/lilaPastelOscuro"
+            android:onClick="policia"
             android:text="@string/call_button"
             android:textColor="@color/black"
             android:textSize="18sp" />
-        <!--Fin del componente policia-->
 
         <View
             android:layout_width="match_parent"
@@ -162,6 +171,7 @@ android:fillViewport="true">
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -202,11 +212,13 @@ android:fillViewport="true">
 
             </LinearLayout>
         </LinearLayout>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/lilaPastelOscuro"
+            android:onClick="CJEM"
             android:text="@string/call_button"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -224,6 +236,7 @@ android:fillViewport="true">
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -264,11 +277,13 @@ android:fillViewport="true">
 
             </LinearLayout>
         </LinearLayout>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/lilaPastelOscuro"
+            android:onClick="IMM"
             android:text="@string/call_button"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -286,6 +301,7 @@ android:fillViewport="true">
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="18sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -326,35 +342,42 @@ android:fillViewport="true">
 
             </LinearLayout>
         </LinearLayout>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/lilaPastelOscuro"
+            android:onClick="LNCV"
             android:text="@string/call_button"
             android:textColor="@color/black"
             android:textSize="18sp" />
         <!--Fin del componente linea de violencia-->
         <View
             android:layout_width="match_parent"
-            android:layout_height="20dp"/>
+            android:layout_height="20dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/lavanda"
-            android:gravity="center_vertical"
-            >
+            android:gravity="center_vertical">
+
             <Button
                 android:id="@+id/botonRegresar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/button_back"
-                android:textSize="20sp"
-                android:textColor="@color/black"
                 android:backgroundTint="@color/lilaPastelMedio"
                 android:onClick="backSupport"
-                />
+                android:text="@string/button_back"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
         </LinearLayout>
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
 
     </LinearLayout>
 </ScrollView>

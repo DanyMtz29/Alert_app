@@ -1,168 +1,149 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/rosaP"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@color/lavanda">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/lavanda"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
-        tools:context=".violentometroActivity">
+        android:padding="16dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="@string/text_violentometro"
+            android:textColor="@color/moradoF"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <!-- Subtítulo general -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Conoce las nuevas violencias que se han incorporado debido al uso de medios digitales"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- CUIDADO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/CUIDADO_OSCURO"
+            android:gravity="center"
+            android:text="@string/text_violentometro_1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="sans-serif-black"
-            android:text="@string/text_violentometro"
-            android:textAlignment="center"
-            android:textColor="@color/azulito"
-            android:textSize="34sp" />
+            android:layout_marginBottom="8dp"
+            android:background="@color/CUIDADO_OSCURO"
+            android:gravity="center"
+            android:text="@string/text_violentometro_1.1"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="30dp"/>
-
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/lavanda"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            tools:context=".violentometroActivity">
+            android:background="@drawable/borde_redondo_cuidado"
+            android:gravity="center"
+            android:lineSpacingExtra="0dp"
+            android:padding="12dp"
+            android:text="@string/text_acciones_violentometro"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/lavanda"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                tools:context=".violentometroActivity">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/text_violentometro_1"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:background="@color/verdeClaro"/>
+        <!-- ALERTA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/ALERTA_OSCURO"
+            android:gravity="center"
+            android:text="@string/text_violentometro_2"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/text_acciones_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/verdeClaro"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/text_acciones2_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@drawable/violentometro_verde_ama"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:paddingTop="10dp"
-                    android:text="@string/text_violentometro_2"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:background="@color/amarilloMedio"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:paddingTop="10dp"
-                    android:text="@string/text_acciones3_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/amarilloMedio"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/text_acciones4_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/amarilloMedio"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/text_acciones4_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/amarilloMedio"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/text_acciones5_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@drawable/violentometro_ama_nar"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:text="@string/text_acciones6_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@drawable/violentometro_nar_rojo"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:paddingTop="10dp"
-                    android:text="@string/text_violentometro_3"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="30sp"
-                    android:background="@color/rojoFuerte"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="20dp"
-                    android:text="@string/text_acciones7_violentometro"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:background="@color/rojoFuerte"
-                    />
-            </LinearLayout>
-        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/ALERTA_OSCURO"
+            android:gravity="center"
+            android:text="@string/text_violentometro_2.1"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_redondo_alerta"
+            android:gravity="center"
+            android:lineSpacingExtra="0dp"
+            android:padding="12dp"
+            android:text="@string/text_acciones3_violentometro"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <!-- URGENTE -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/URGENTE_OSCURO"
+            android:gravity="center"
+            android:text="@string/text_violentometro_3"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/URGENTE_OSCURO"
+            android:gravity="center"
+            android:text="@string/text_violentometro_3.1"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_redondo_urgente"
+            android:gravity="center"
+            android:lineSpacingExtra="0dp"
+            android:padding="12dp"
+            android:text="@string/text_acciones6_violentometro"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!-- Botón -->
         <Button
             android:id="@+id/botonRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:text="@string/button_back"
-            android:textSize="20sp"
-            android:textColor="@color/black"
             android:backgroundTint="@color/lilaPastelOscuro"
             android:onClick="backViolentometro"
-            />
+            android:text="@string/button_back"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
     </LinearLayout>
 </ScrollView>
